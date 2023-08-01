@@ -4,7 +4,8 @@ date: 2021-03-17T13:49:56+08:00
 draft: false
 tags: [ "first" ]
 categories: [ "记录" ]
-images: ["/static/postImg/first-post-1.png"]
+featuredImage: "/img/postImg/first-post-1.png"
+featuredImagePreview: "/img/postImg/first-post-1.png"
 ---
 # 时间线
 
