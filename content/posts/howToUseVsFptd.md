@@ -2,7 +2,6 @@
 title: "Vsftpd的使用"
 date: 2023-08-01T09:42:12+08:00
 draft: false
-author: "Zhou xy"
 description: "如何使用vsftpd创建ftp服务器"
 tags: [ "vsftpd" ]
 categories: [ "学习" ]
@@ -10,7 +9,9 @@ categories: [ "学习" ]
 
 # 关于 vsftpd
 
-    vsftpd（Very Secure FTP Daemon）是一个高度安全的FTP服务器软件，被广泛用于Linux和类Unix系统。它旨在提供一个安全可靠的FTP服务器，具有良好的性能和一系列功能。
+    vsftpd（Very Secure FTP Daemon）是一个高度安全的FTP服务器软件，
+    被广泛用于Linux和类Unix系统。它旨在提供一个安全可靠的FTP服务器，
+    具有良好的性能和一系列功能。
 
 ## 安装vsftpd软件包 （环境ubuntu）
 
