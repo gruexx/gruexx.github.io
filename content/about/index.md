@@ -1,14 +1,14 @@
 ---
-title: "关于我"
+title: "关于我[zhouxy]"
 ---
 
 {{< music server="tencent" type="song" id="002Cm7Or0B08z8" >}}
 
-## 个人相关 <img src="/1119864054/img/logo.png" align='right' style="height:100px"/>
+## 个人相关 <img src="/porrizxx/img/logo.png" align='right' style="height:100px"/>
 
 ###### 联系方式
 
-- GitHub : https://github.com/1119864054
+- GitHub : https://github.com/porrizxx
 - Email : 1119864054@qq.com
 
 ## 网站相关

@@ -1,4 +1,4 @@
-baseURL = "https://1119864054.github.io/"
+baseURL = "https://porrizxx.github.io/"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -23,7 +23,7 @@ keywords = ["Blog", "Hugo", "LoveIt"]
 # 网站默认主题样式 ("light", "dark", "auto")
 defaultTheme = "light"
 # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-gitRepo = "https://github.com/1119864054/1119864054"
+gitRepo = "https://github.com/porrizxx"
 #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
 # ("sha256", "sha384", "sha512", "md5")
 fingerprint = ""
@@ -156,7 +156,7 @@ defaultHiddenFromHomePage = false
 
 # 作者的社交信息设置
 [params.social]
-GitHub = "https://github.com/1119864054"
+GitHub = "https://github.com/porrizxx"
 Linkedin = ""
 Twitter = "xxxx"
 Instagram = ""
@@ -327,7 +327,7 @@ shortname = ""
 [params.page.comment.gitalk]
 #
 enable = false
-owner = "1119864054"
+owner = "porrizxx"
 repo = "blog-comment"
 clientId = "66b49e2a3b34f9346e0a"
 clientSecret = "57d6774c3649a8f16b1c130b3d3dded7774b57b8"
@@ -377,7 +377,7 @@ enable = false
 [params.page.comment.utterances]
 enable = true
 # owner/repo
-repo = "1119864054/blog-comment"
+repo = "porrizxx/blog-comment"
 issueTerm = "pathname"
 label = ""
 lightTheme = "github-light"
