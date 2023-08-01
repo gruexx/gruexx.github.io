@@ -4,7 +4,7 @@ title: "关于我[zhouxy]"
 
 {{< music server="tencent" type="song" id="002Cm7Or0B08z8" >}}
 
-## 个人相关 <img src="/porrizxx/img/logo.png" align='right' style="height:100px"/>
+## 个人相关 <img src="/static/img/logo.png" align='right' style="height:100px"/>
 
 ###### 联系方式
 
