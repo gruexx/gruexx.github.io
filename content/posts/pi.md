@@ -46,7 +46,7 @@ pi:$6$4ilokQRQxmURT.py$aJWBQ5yniJJPwV3CKawYJcnSK5JZGhrVZYF3K4omRUFv6KL0MysEH7F4N
 
 # 2 系统软件安装
 
-- sudo passwd root 设置root密码
+- `sudo passwd root` 设置root密码
 
 ## 2.1 安装wiringpi
 
