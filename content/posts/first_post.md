@@ -5,8 +5,8 @@ lastmod: 2023-08-2T12:49:56+08:00
 draft: false
 tags: [ "first" ]
 categories: [ "记录" ]
-featuredImage: "/img/postImg/first-post-1.png"
-featuredImagePreview: "/img/postImg/first-post-1.png"
+featuredImage: "/img/firstPost/first-post-1.png"
+featuredImagePreview: "/img/firstPost/first-post-1.png"
 ---
 
 # 时间线
