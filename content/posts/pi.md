@@ -212,3 +212,34 @@ sudo cat /sys/kernel/debug/pinctrl/fe200000.gpio-pinctrl-bcm2711/pinmux-pins
 > GPIO13 = RXD5 -> ttyAMA4
 
 {{< image src="/img/pi/J8-gpio.png" caption="图片更明显" src_l="/img/pi/J8-gpio.png" >}}
+
+### 4.2.3 测试串口是否连通
+
+测试 **ttyAMA1** 是否通，首先短接 **GPIO0** 和 **GPIO1** ，然后重启树莓派
+
+```shell
+# 查看串口波特率
+stty -F /dev/ttyAMA1
+```
+
+编写python脚本测试发送和接收消息
+
+```python
+import serial
+
+uart = serial.Serial(port="/dev/ttyAMA1", baudrate=9600)
+
+send = uart.write("Hello World\n".encode("gbk"))
+print(send)
+
+rev = uart.readline()
+print(rev)
+```
+
+在树莓派上执行
+
+```shell
+python aurt-test.py
+```
+
+{{< image src="/img/pi/aurt-test.png" caption="执行结果" src_l="/img/pi/aurt-test.png">}}

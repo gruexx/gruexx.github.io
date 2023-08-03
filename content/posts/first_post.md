@@ -28,3 +28,5 @@ featuredImagePreview: "/img/firstPost/first-post-1.png"
 [主题文档-内容](https://hugoloveit.com/zh-cn/theme-documentation-content)
 
 [Markdown 基本语法](https://hugoloveit.com/zh-cn/basic-markdown-syntax/)
+
+[主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
