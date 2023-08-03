@@ -21,7 +21,7 @@ description = "ZXY'S BLOG"
 # 网站关键词
 keywords = ["Blog", "Hugo", "LoveIt"]
 # 网站默认主题样式 ("light", "dark", "auto")
-defaultTheme = "light"
+defaultTheme = "auto"
 # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
 gitRepo = "https://github.com/porrizxx"
 #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -286,9 +286,9 @@ scale = true
 fullscreen = true
 #  文章页面的分享信息设置
 [params.page.share]
-enable = true
-Twitter = true
-Facebook = true
+enable = false
+Twitter = false
+Facebook = false
 Linkedin = false
 Whatsapp = false
 Pinterest = false
@@ -304,7 +304,7 @@ Pocket = false
 Digg = false
 Stumbleupon = false
 Flipboard = false
-Weibo = true
+Weibo = false
 Renren = false
 Myspace = false
 Blogger = false

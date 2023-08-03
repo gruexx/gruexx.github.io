@@ -2,11 +2,14 @@
 title: "关于我[zhouxy]"
 ---
 
-{{< music server="tencent" type="song" id="002Cm7Or0B08z8" >}}
+[//]: # ({{< music url="/music/spiral.mp3" name=spiral artist=LONGMAN cover="/images/spiral.jpg" >}})
+
+{{< music auto="https://music.163.com/#/song?id=2057696725" >}}
+
 
 ## 个人相关 <img src="/img/logo.png" align='right' style="height:100px"/>
 
-###### 联系方式
+### 联系方式
 
 - GitHub : https://github.com/porrizxx
 - Email : 1119864054@qq.com
