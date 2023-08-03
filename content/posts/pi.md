@@ -5,6 +5,8 @@ draft: false
 description: "树莓派（CM4）学习日志记录"
 tags: [ "树莓派" ]
 categories: [ "学习" ]
+featuredImage: "/img/pi/pinOut.png"
+featuredImagePreview: "/img/pi/pinOut.png"
 ---
 
 # 1 镜像烧录（EMMC版本）
@@ -68,4 +70,67 @@ gpio readall
 
 # 查看板子详细信息
 pinout
+```
+
+{{< image src="/img/pi/gpio.png" caption="gpio readall 返回信息" src_l="/img/pi/gpio.png" >}}
+
+# 3 python 脚本编写
+
+## 3.1 RPi.GPIO 模块使用
+
+### 3.1.1 导入模块
+
+```python
+import RPi.GPIO as GPIO
+```
+
+### 3.1.2 针脚编号
+
+有两种编号可以用来定位针脚（参考上方的图 "gpio readall 返回信息"）：
+
+第一种方式是使用 BOARD 编号系统，使用Physical编号，即物理的编号位置。
+
+第二种方式是使用 BCM 编号，使用BCM的编号。
+
+```python
+GPIO.setmode(GPIO.BOARD)
+```
+
+或者
+
+```python
+GPIO.setmode(GPIO.BCM)
+```
+
+### 3.1.3 设置输入输出
+
+```python
+# 配置为输入的通道
+GPIO.setup(pin_num, GPIO.IN)
+
+# 配置为输出的通道
+GPIO.setup(pin_num, GPIO.OUT)
+```
+
+> pin_num 是针脚的编号
+
+### 3.1.4 针脚电压
+
+```python
+# 查看针脚电压状态
+GPIO.input(pin_num)
+
+# 设置针脚输出高电压
+GPIO.output(pin_num, GPIO.HIGH)
+
+# 设置针脚输出低电压
+GPIO.output(pin_num, GPIO.LOW)
+```
+
+### 3.1.5 清理
+
+脚本结束后的清理，恢复所有使用过的通道状态为输入，该操作仅会清理脚本使用过的 GPIO 通道。
+
+```python 
+GPIO.cleanup()
 ```
