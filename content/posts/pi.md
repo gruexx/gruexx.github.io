@@ -134,3 +134,81 @@ GPIO.output(pin_num, GPIO.LOW)
 ```python 
 GPIO.cleanup()
 ```
+
+# 4 UART开启
+
+CM4有6个UART，其中默认的开启的串口**UART0**和**UART1**都是**GPIO14**和**GPIO15**
+可以通过shell命令查看
+
+```shell
+dtoverlay -h uart0
+```
+
+{{< image src="/img/pi/uart0.png" caption="uart0串口信息 GPIO14输出 GPIO15输入" src_l="/img/pi/uart0.png" >}}
+
+现在要开启剩余的4个UART串口
+
+## 4.1 修改config.txt
+
+```shell
+vi /boot/config.txt
+```
+
+在文本末尾加上
+
+```
+dtoverlay=uart2
+dtoverlay=uart3
+dtoverlay=uart4
+dtoverlay=uart5
+```
+
+添加完重启
+
+```shell
+reboot
+```
+
+## 4.2 查看UART串口信息
+
+### 4.2.1 查看串口是否开启
+
+```shell
+dmesg | grep tty
+```
+
+{{< image src="/img/pi/tty.png" caption="ttyAMA1~4都开启了" src_l="/img/pi/tty.png" >}}
+
+### 4.2.2 查看串口对应的GPIO口
+
+```shell
+sudo cat /sys/kernel/debug/pinctrl/fe200000.gpio-pinctrl-bcm2711/pinmux-pins
+```
+
+{{< image src="/img/pi/tty-pins.png" caption="串口和针脚的对应关系很明显了" src_l="/img/pi/tty-pins.png" >}}
+
+> **可以得出各 UART 串口与 GPIO 对应关系：**
+>
+> GPIO14 = TXD0 -> ttyAMA0
+>
+> GPIO0 = TXD2 -> ttyAMA1
+>
+> GPIO4 = TXD3 -> ttyAMA2
+>
+> GPIO8 = TXD4 -> ttyAMA3
+>
+> GPIO12 = TXD5 -> ttyAMA4
+>
+> ————————————
+>
+> GPIO15 = RXD0 -> ttyAMA0
+>
+> GPIO1 = RXD2 -> ttyAMA1
+>
+> GPIO5 = RXD3 -> ttyAMA2
+>
+> GPIO9 = RXD4 -> ttyAMA3
+>
+> GPIO13 = RXD5 -> ttyAMA4
+
+{{< image src="/img/pi/J8-gpio.png" caption="图片更明显" src_l="/img/pi/J8-gpio.png" >}}
