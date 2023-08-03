@@ -3,8 +3,8 @@ title: "第一篇日志——建站日志"
 date: 2021-03-17T13:49:56+08:00
 lastmod: 2023-08-2T12:49:56+08:00
 draft: false
-tags: [ "first" ]
-categories: [ "记录" ]
+tags: [ "时间线" ]
+categories: [ "日志" ]
 featuredImage: "/img/firstPost/first-post-1.png"
 featuredImagePreview: "/img/firstPost/first-post-1.png"
 ---
