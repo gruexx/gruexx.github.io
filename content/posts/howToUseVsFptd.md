@@ -5,6 +5,8 @@ draft: false
 description: "如何使用vsftpd创建ftp服务器"
 tags: [ "vsftpd" ]
 categories: [ "学习" ]
+featuredImage: "/img/vsftpd/ftp.jpg"
+featuredImagePreview: "/img/vsftpd/ftp.jpg"
 ---
 
 # 1 关于 vsftpd

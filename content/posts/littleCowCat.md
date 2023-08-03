@@ -5,8 +5,8 @@ draft: false
 description: "新到的一只小奶牛"
 tags: [ "照片", "时间线" ]
 categories: [ "猫猫", "记录" ]
-featuredImage: "/img/littleCowCat/6.jpg"
-featuredImagePreview: "/img/littleCowCat/6.jpg"
+featuredImage: "/img/littleCowCat/main.jpg"
+featuredImagePreview: "/img/littleCowCat/main.jpg"
 ---
 
 # 时间线
