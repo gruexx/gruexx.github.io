@@ -1,8 +1,8 @@
 ---
-title: "树莓派（CM4/CM4IO）学习日志记录"
+title: "树莓派（CM4/CM4IO）学习日志记录 【1】"
 date: 2023-08-02T11:50:05+08:00
 draft: false
-description: "树莓派（CM4）学习日志记录"
+description: "树莓派（CM4）学习日志记录 【1】"
 tags: [ "树莓派" ]
 categories: [ "学习" ]
 featuredImage: "/img/pi/pinOut.png"
@@ -215,7 +215,7 @@ sudo cat /sys/kernel/debug/pinctrl/fe200000.gpio-pinctrl-bcm2711/pinmux-pins
 
 ### 4.2.3 测试串口是否连通
 
-测试 **ttyAMA1** 是否通，首先短接 **GPIO0** 和 **GPIO1** ，然后重启树莓派
+要测试 **ttyAMA1** 是否通，首先短接 **GPIO0** 和 **GPIO1** ，然后重启树莓派
 
 ```shell
 # 查看串口波特率
@@ -243,3 +243,25 @@ python aurt-test.py
 ```
 
 {{< image src="/img/pi/aurt-test.png" caption="执行结果" src_l="/img/pi/aurt-test.png">}}
+
+**其他串口的测试同上**
+
+# 5 蓝牙通讯
+
+## 5.1 和手机蓝牙连接
+
+```shell
+# 进入蓝牙配对界面
+bluetoothctl
+
+# 扫描蓝牙设备
+scan on
+
+# 找到自己手机的蓝牙地址并配对连接
+power on
+agent on
+pair 40:F9:46:50:32:69
+```
+## 5.2 与手机通讯
+
+
