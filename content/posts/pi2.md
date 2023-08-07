@@ -1,5 +1,5 @@
 ---
-title: "树莓派（CM4）学习日志记录 【2】"
+title: "树莓派（CM4）学习日志记录 【2-OpenCV】"
 date: 2023-08-07T12:09:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2】"
@@ -25,7 +25,7 @@ featuredImagePreview: "/img/pi2/main.jpg"
 
 - 使用官方的**树莓派镜像烧录器 Raspberry Pi Imager**进行烧录，镜像直接选择第一项，在设置里设置一下ssh，然后直接烧录
 
-{{< image src="/img/pi2/sl.png" caption="直接烧录" src_l="/img/pi2/sl.png" >}}
+{{< image src="/img/pi2/sl.png" caption="非常好用的工具" src_l="/img/pi2/sl.png" >}}
 
 ## 1.4 连接桌面
 
@@ -52,3 +52,10 @@ sudo apt-get install luvcview
 ```shell
 sudo luvcview
 ```
+## 2.3 OpenCV
+
+### 2.3.1 安装opencv
+
+安装过程参考csdn大佬的教程安装，基本没有什么问题，主要是版本对应好就行
+
+> [安装教程链接](https://blog.csdn.net/weixin_45911959/article/details/124157416)
