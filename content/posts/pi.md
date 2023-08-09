@@ -127,6 +127,8 @@ GPIO.output(pin_num, GPIO.HIGH)
 GPIO.output(pin_num, GPIO.LOW)
 ```
 
+> 苹果有个app  **PiHelper** 能直接在手机上修改针脚的输入输出和高低电压，很方便
+
 ### 3.1.5 清理
 
 脚本结束后的清理，恢复所有使用过的通道状态为输入，该操作仅会清理脚本使用过的 GPIO 通道。
