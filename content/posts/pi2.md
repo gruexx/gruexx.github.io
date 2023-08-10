@@ -148,3 +148,12 @@ pip install -r requirement.txt
 **train**是训练用的，**val**是验证用的，保证图片和txt文件名字对应就行
 
 {{< image src="/img/pi2/coco.png" caption="数据集格式" src_l="/img/pi2/coco.png" >}}
+
+
+## onnx
+
+https://netron.app/
+
+https://convertmodel.com/
+
+https://github.com/nknytk/built-onnxruntime-for-raspberrypi-linux/tree/master
