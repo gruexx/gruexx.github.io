@@ -1,5 +1,5 @@
 ---
-title: "新到的一只小奶牛"
+title: "捡到一只小猫 😂"
 date: 2023-08-03T12:07:55+08:00
 draft: false
 description: "新到的一只小奶牛"
@@ -13,7 +13,7 @@ featuredImagePreview: "/img/littleCowCat/main.jpg"
 
 ## 2023-07-24 领养
 
-是别人捡来的小猫，猜测有两个月大了，会用猫砂，会吃猫粮，不怕人，看来是只有猫德的小猫 🤔
+猜测有两个月大了，会用猫砂，会吃猫粮，不怕人，看来是只有猫德的小猫 🤔
 
 {{< image src="/img/littleCowCat/1.jpg" caption="刚到家的时候" src_l="/img/littleCowCat/1.jpg" >}}
 
