@@ -3,7 +3,7 @@ title: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标
 date: 2023-08-07T12:09:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
-tags: [ "树莓派" ]
+tags: [ "树莓派", "Yolov5",  "OpenCV"]
 categories: [ "学习" ]
 featuredImage: "/img/pi2/main.jpg"
 featuredImagePreview: "/img/pi2/main.jpg"
