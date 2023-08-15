@@ -1,5 +1,5 @@
 ---
-title: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
+title: "树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测"
 date: 2023-08-07T12:09:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"

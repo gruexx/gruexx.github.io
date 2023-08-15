@@ -1,5 +1,5 @@
 ---
-title: "树莓派（CM4/CM4IO）学习日志记录 【1-基础】"
+title: "树莓派（CM4/CM4IO）学习日志记录 【1】 基础"
 date: 2023-08-02T11:50:05+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【1】"
@@ -250,7 +250,7 @@ python aurt-test.py
 
 # 5 蓝牙通讯
 
-## 5.1 和手机蓝牙连接
+## 5.1 和手机蓝牙配对
 
 ```shell
 # 进入蓝牙配对界面
@@ -259,11 +259,63 @@ bluetoothctl
 # 扫描蓝牙设备
 scan on
 
-# 找到自己手机的蓝牙地址并配对连接
+# 找到自己手机的蓝牙地址并配对
 power on
 agent on
 pair 40:F9:46:50:32:69
 ```
+
 ## 5.2 与手机通讯
 
+要与手机通讯必须先修改一些配置
 
+1. `sudo usermod -G bluetooth -a pi` 添加用户到蓝牙组
+
+2. `sudo nano /etc/systemd/system/dbus-org.bluez.service` 修改蓝牙配置文件
+
+   {{< image src="/img/pi/bluez.png" caption="蓝牙配置文件修改后" src_l="/img/pi/bluez.png">}}
+
+3. `sudo reboot` 重启树莓派
+
+4. `hciconfig -a` 查看蓝牙名称
+
+5. `sudo systemctl status bluetooth` 查看蓝牙服务状态
+
+6. `sudo hciconfig hci0 piscan` 设置蓝牙可被发现
+
+7. `sudo rfcomm watch hci0` 等待蓝牙设备连接
+
+使用手机上的蓝牙调试的app连接树莓派的蓝牙
+
+{{< image src="/img/pi/rf.png" caption="连接成功" src_l="/img/pi/rf.png">}}
+
+连接成功后可以看到多出来一个串口 **/dev/rfcomm0**，通过这个串口和手机通信
+
+写个python脚本向串口发送数据和接收数据
+
+```python
+import serial
+
+# 连接串口
+uart = serial.Serial(port="/dev/rfcomm0", baudrate=9600)
+
+# 发送数据
+send = uart.write("Hello World rfcomm0\n".encode("gbk"))
+
+# 接收数据
+while True:
+    rev = uart.read(24).decode('utf-8')
+    print(rev)
+```
+
+## 5.3 蓝牙天线配置为外置天线
+
+编辑 /boot/config.txt 文件
+
+`sudo nano /boot/config.txt`
+
+在文件末尾加入一行配置：
+
+`dtparam=ant2`
+
+> [如何将树莓派 CM4 的 WiFi 天线配置为外置天线](https://shumeipai.nxez.com/2021/12/23/how-to-configure-raspberry-pi-cm4-wifi-use-the-external-antenna.html)
