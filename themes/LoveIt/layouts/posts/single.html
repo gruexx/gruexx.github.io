@@ -54,6 +54,14 @@
                 {{- end -}}
                 <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp;
+
+                {{ if .Site.Params.busuanzi.enable -}}
+                <span id="busuanzi_container_value_page_pv">
+                    <span id="busuanzi_value_page_pv"></span>&nbsp;
+                    {{- T "views" -}}
+                </span>
+                {{- end }}
+
                 {{- $comment := .Scratch.Get "comment" | default dict -}}
                 {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
                     <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
