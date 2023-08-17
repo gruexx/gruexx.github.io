@@ -552,7 +552,7 @@ taxonomyTerm = ["HTML"]
 [[menu.main]]
 identifier = "posts"
 # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-pre = "✏"
+pre = ""
 # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
 post = ""
 name = "文章"
@@ -562,7 +562,7 @@ title = ""
 weight = 1
 [[menu.main]]
 identifier = "tags"
-pre = "📌"
+pre = ""
 post = ""
 name = "标签"
 url = "/tags/"
@@ -570,7 +570,7 @@ title = ""
 weight = 2
 [[menu.main]]
 identifier = "categories"
-pre = "🗂"
+pre = ""
 post = ""
 name = "分类"
 url = "/categories/"
@@ -578,7 +578,7 @@ title = ""
 weight = 3
 [[menu.main]]
 identifier = "about"
-pre = "😀"
+pre = ""
 post = ""
 name = "关于"
 url = "/about/"
