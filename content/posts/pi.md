@@ -319,3 +319,16 @@ while True:
 `dtparam=ant2`
 
 > [如何将树莓派 CM4 的 WiFi 天线配置为外置天线](https://shumeipai.nxez.com/2021/12/23/how-to-configure-raspberry-pi-cm4-wifi-use-the-external-antenna.html)
+
+## 5.4 设置蓝牙一直可见
+
+```shell
+# 进入蓝牙控制台
+sudo bluetoothctl
+
+# 开启蓝牙可见
+discoverable on 
+
+# 设置蓝牙一直可见
+discoverable-timeout 0
+```
