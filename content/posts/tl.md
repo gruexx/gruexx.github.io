@@ -3,7 +3,7 @@ title: "延时摄影视频合集"
 date: 2023-08-02T12:33:40+08:00
 draft: false
 description: "第一次制作延时摄影视频"
-tags: [ "延时摄影", "照片" ]
+tags: [ "延时摄影", "视频" ]
 categories: [ "摄影" ]
 featuredImage: "/img/tl/TL-100.jpg"
 featuredImagePreview: "/img/tl/TL-100.jpg"

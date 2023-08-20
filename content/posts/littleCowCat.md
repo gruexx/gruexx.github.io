@@ -4,7 +4,7 @@ date: 2023-08-03T12:07:55+08:00
 draft: false
 description: "新到的一只小奶牛"
 tags: [ "照片", "时间线" ]
-categories: [ "猫猫", "记录" ]
+categories: [ "日志" ]
 featuredImage: "/img/littleCowCat/main.jpg"
 featuredImagePreview: "/img/littleCowCat/main.jpg"
 ---
