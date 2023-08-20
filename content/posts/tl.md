@@ -15,8 +15,6 @@ featuredImagePreview: "/img/tl/TL-100.jpg"
 
 {{< bilibili id=BV1uN411h7YG >}}
 
-# 拍摄于 2023-08-02 第一次延时摄影 加长版
+# 拍摄于 2023-08-20
 
-为何调不出第一次一样的滤镜了呢 🤔🤔😂
-
-{{< bilibili id=BV1Kj411r7BR >}}
+{{< bilibili id=BV1Lp4y1K7gp >}}
