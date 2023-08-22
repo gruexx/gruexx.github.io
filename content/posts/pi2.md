@@ -27,6 +27,10 @@ featuredImagePreview: "/img/pi2/main.jpg"
 
 {{< image src="/img/pi2/sl.png" caption="非常好用的工具" src_l="/img/pi2/sl.png" >}}
 
+{{< admonition tip "提醒" >}}
+不要忘了点击右下角的齿轮设置ssh用户名和密码 
+{{< /admonition >}}
+
 ## 1.4 连接桌面
 
 系统安装完成后，可以选择直接HDMI线连接显示器就能看的桌面，或者通过VNC连接远程桌面

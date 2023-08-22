@@ -275,6 +275,10 @@ pair 40:F9:46:50:32:69
 
    {{< image src="/img/pi/bluez.png" caption="蓝牙配置文件修改后" src_l="/img/pi/bluez.png">}}
 
+    > ExecStart=/usr/libexec/bluetooth/bluetoothd -C
+    > 
+    > ExecStartPost=/usr/bin/sdptool add SP    
+
 3. `sudo reboot` 重启树莓派
 
 4. `hciconfig -a` 查看蓝牙名称
@@ -331,4 +335,37 @@ discoverable on
 
 # 设置蓝牙一直可见
 discoverable-timeout 0
+```
+
+## 5.5 将rfcomm配置成服务
+
+新建文件 `rfcomm.service`
+
+```service
+[Unit]
+Description=RFCOMM service
+After=bluetooth.service
+Requires=bluetooth.service
+
+[Service]
+ExecStart=/usr/bin/rfcomm watch hci0
+
+[Install]
+WantedBy=multi-user.target
+```
+
+放在`/etc/systemd/system/`目录下，完成后执行`systemctl daemon-reload`
+
+```shell
+# 启动
+systemctl start rfcomm
+
+# 停止
+systemctl stop rfcomm
+
+# 重启
+systemctl restart rfcomm
+
+# 状态
+systemctl status rfcomm
 ```
