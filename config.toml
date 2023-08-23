@@ -42,7 +42,7 @@ title = "porrizx的篝火"
 # 是否隐藏网站图标资源链接
 noFavicon = false
 # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-svgFavicon = "/img/logo.png"
+svgFavicon = "/img/logo.svg"
 # Android 浏览器主题色
 themeColor = "#ffffff"
 # Safari 图标颜色
@@ -139,7 +139,7 @@ gravatarEmail = "1119864054@qq.com"
 # 主页显示头像的 URL
 avatarURL = ""
 #  主页显示的网站标题 (支持 HTML 格式)
-title = "zhouxy"
+title = "porrizx"
 # 主页显示的网站副标题
 subtitle = "TEST"
 # 是否为副标题显示打字机动画
@@ -502,7 +502,7 @@ endLevel = 6
 
 # 作者配置
 [author]
-name = "zhouxy"
+name = "porrizx"
 email = "1119864054@qq.com"
 link = "/about/"
 
