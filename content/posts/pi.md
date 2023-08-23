@@ -348,13 +348,14 @@ After=bluetooth.service
 Requires=bluetooth.service
 
 [Service]
+Restart=on-failure
 ExecStart=/usr/bin/rfcomm watch hci0
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-放在`/etc/systemd/system/`目录下，完成后执行`systemctl daemon-reload`
+放在`/etc/systemd/system/`目录下，完成后执行`systemctl daemon-reload`和 `systemctl enable rfcomm`
 
 ```shell
 # 启动
