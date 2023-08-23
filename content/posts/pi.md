@@ -2,7 +2,7 @@
 title: "树莓派（CM4/CM4IO）学习日志记录 【1】 基础"
 date: 2023-08-02T11:50:05+08:00
 draft: false
-description: "树莓派（CM4）学习日志记录 【1】"
+description: "树莓派镜像烧录串口UART蓝牙"
 tags: [ "树莓派" ]
 categories: [ "学习" ]
 featuredImage: "/img/pi/pinOut.png"
