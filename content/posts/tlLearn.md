@@ -3,7 +3,7 @@ title: "延时摄影视频制作教程"
 date: 2023-08-20T21:01:00+08:00
 draft: false
 description: "延时摄影视频制作教程"
-tags: [ "延时摄影", "视频", "教程" ]
+tags: [ "延时摄影", "视频", "教程", "LRTimelapse", "Lightroom", "DaVinci" ]
 categories: [ "摄影","学习" ]
 featuredImage: "/img/tlLearn/TL-383.jpg"
 featuredImagePreview: "/img/tlLearn/TL-383.jpg"

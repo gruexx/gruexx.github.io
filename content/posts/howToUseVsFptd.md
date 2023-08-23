@@ -3,7 +3,7 @@ title: "Vsftpd的使用"
 date: 2023-08-01T09:42:12+08:00
 draft: false
 description: "如何使用vsftpd创建ftp服务器"
-tags: [ "vsftpd" ]
+tags: [ "vsftpd", "教程" ]
 categories: [ "学习" ]
 featuredImage: "/img/vsftpd/ftp.jpg"
 featuredImagePreview: "/img/vsftpd/ftp.jpg"
