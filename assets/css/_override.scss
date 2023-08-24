@@ -1,1 +1,6 @@
-$global-font-family: 'hm', "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+@font-face {
+  font-family: "sc";
+  src: url("/fonts/SourceHanSansSC-Regular.ttf") format("truetype");
+}
+
+$global-font-family: 'sc', sans-serif;
