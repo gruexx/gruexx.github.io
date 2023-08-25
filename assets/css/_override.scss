@@ -1,6 +1,3 @@
-@font-face {
-  font-family: "sc";
-  src: url("/fonts/SourceHanSansSC-Regular.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&family=Ubuntu&display=swap');
 
-$global-font-family: 'sc', sans-serif;
+$global-font-family: 'Ubuntu', 'Noto Sans SC', sans-serif;
