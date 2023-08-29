@@ -1,4 +1,4 @@
-baseURL = "https://porrizxx.github.io/"
+baseURL = "https://porrizx.cc/"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -15,7 +15,7 @@ enableEmoji = true
 
 [params]
 #  FixIt 主题版本
-version = "0.2.11"
+version = "0.2.18"
 # 网站描述
 description = "porrizx的篝火,hugo,摄影,延时摄影,树莓派,串口,蓝牙,vsftpd,猫猫,opencv,yolo"
 # 网站关键词
