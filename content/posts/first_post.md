@@ -28,4 +28,3 @@ featuredImagePreview: "/img/firstPost/first-post-1.png"
 
 [Markdown 基本语法](https://fixit.lruihao.cn/zh-cn/documentation/content-management/markdown-syntax/extended/)
 
-{{ .Site.Data.test.pi }}
