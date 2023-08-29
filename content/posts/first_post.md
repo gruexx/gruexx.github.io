@@ -4,8 +4,8 @@ date: 2021-03-17T13:49:56+08:00
 draft: false
 tags: [ "时间线" ]
 categories: [ "日志" ]
-featuredImage: "http://blog.porrizx.cc:7102/blog-img/firstPost/first-post-1.png"
-featuredImagePreview: "http://blog.porrizx.cc:7102/blog-img/firstPost/first-post-1.png"
+featuredImage: "/img/firstPost/first-post-1.png"
+featuredImagePreview: "/img/firstPost/first-post-1.png"
 ---
 
 # 时间线
@@ -27,3 +27,5 @@ featuredImagePreview: "http://blog.porrizx.cc:7102/blog-img/firstPost/first-post
 [主题文档-内容](https://fixit.lruihao.cn/zh-cn/documentation/content-management/introduction/#front-matter)
 
 [Markdown 基本语法](https://fixit.lruihao.cn/zh-cn/documentation/content-management/markdown-syntax/extended/)
+
+{{ .Site.Data.test.pi }}
