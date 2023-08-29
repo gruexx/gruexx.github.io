@@ -22,10 +22,10 @@ featuredImagePreview: "/img/firstPost/first-post-1.png"
 
 # 网站教程
 
-[主题文档 - 基本概念](https://hugoloveit.com/zh-cn/theme-documentation-basics/)
+[FixIt](https://fixit.lruihao.cn/zh-cn/)
 
-[主题文档-内容](https://hugoloveit.com/zh-cn/theme-documentation-content)
+[主题文档-内容](https://fixit.lruihao.cn/zh-cn/documentation/content-management/introduction/#front-matter)
 
-[Markdown 基本语法](https://hugoloveit.com/zh-cn/basic-markdown-syntax/)
+[Markdown 基本语法](https://fixit.lruihao.cn/zh-cn/documentation/content-management/markdown-syntax/extended/)
 
-[主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
+{{ .Site.Data.test.pi }}

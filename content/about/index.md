@@ -15,4 +15,4 @@ title: "关于我"
 > hugo v0.115.2-8966424e0e521fb1627216a84efd2c5d5917cb0d+extended windows/amd64 BuildDate=2023-07-08T17:06:56Z
 > VendorInfo=gohugoio
 >
-> LoveIt v0.2.11
+> FixIt v0.2.11
