@@ -4,8 +4,8 @@ date: 2021-03-17T13:49:56+08:00
 draft: false
 tags: [ "时间线" ]
 categories: [ "日志" ]
-featuredImage: "/img/firstPost/first-post-1.png"
-featuredImagePreview: "/img/firstPost/first-post-1.png"
+featuredImage: "https://blog.porrizx.cc:7103/blog-img/firstPost/first-post-1.png"
+featuredImagePreview: "https://blog.porrizx.cc:7103/blog-img/firstPost/first-post-1.png"
 ---
 
 # 时间线
