@@ -5,8 +5,8 @@ draft: false
 description: "延时摄影视频制作教程"
 tags: [ "延时摄影", "视频", "教程", "LRTimelapse", "Lightroom", "DaVinci" ]
 categories: [ "摄影","学习" ]
-featuredImage: "https://blog.porrizx.cc:7103/blog-img/tlLearn/TL-383.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/blog-img/tlLearn/TL-383.jpg"
+featuredImage: "https://blog.porrizx.cc:7103/blog-img/tlLearn/TL-328.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/blog-img/tlLearn/TL-328.jpg"
 ---
 
 # 0 前置准备
