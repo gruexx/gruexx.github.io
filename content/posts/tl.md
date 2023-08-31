@@ -5,8 +5,8 @@ draft: false
 description: "第一次制作延时摄影视频"
 tags: [ "延时摄影", "视频", "bilibili" ]
 categories: [ "摄影" ]
-featuredImage: "https://blog.porrizx.cc:7103/blog-img/tl/TL-100.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/blog-img/tl/TL-100.jpg"
+featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/tl/TL-100.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/tl/TL-100.jpg"
 ---
 
 # 拍摄于 2023-08-01 第一次延时摄影
