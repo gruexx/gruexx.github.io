@@ -1,6 +1,7 @@
 ---
 title: "树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测"
 date: 2023-08-07T12:09:38+08:00
+lastmod: 2023-09-01T18:33:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
 tags: [ "树莓派", "Yolov5",  "OpenCV", "摄像头", "目标检测", "onnx", "onnxruntime" ]
@@ -326,3 +327,12 @@ def run(
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" caption="拍的显示器比较模糊 但是也能识别到" src_l="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" >}}
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect-pi.png" caption="在树莓派上运行 每张图片的推理速度在200ms左右 输出视频能有5帧左右" src_l="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect-pi.png" >}}
+
+# 5 遇到的问题和解决方法
+
+## 5.1 连接多个摄像头出现问题
+
+连接多个摄像头，用opencv展示视频输出时，一只摄像头一直报`select timeout`
+
+原因是树莓派的CPU/GPU处理能力有限，或者是主流的usb摄像头驱动uvc有一些限制，最终造成图像数据无法很好处理
+
