@@ -1,5 +1,6 @@
 ---
 title: "树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测"
+subtitle: 基于摄像头的目标检测尝试
 date: 2023-08-07T12:09:38+08:00
 lastmod: 2023-09-01T18:33:38+08:00
 draft: false
@@ -336,3 +337,14 @@ def run(
 
 原因是树莓派的CPU/GPU处理能力有限，或者是主流的usb摄像头驱动uvc有一些限制，最终造成图像数据无法很好处理
 
+解决方法：由于opencv使用uvc在树莓派中读取usb摄像机流，而cv2.VideoCapture可能默认为未压缩的流，例如YUYV，因此我们需要将流格式更改为MJPG之类的内容，具体取决于摄像机是否支持该格式。
+
+在终端输入 `v4l2-ctl -d /dev/video0 --list-formats` 查询你的摄像头支持哪一种流
+
+在用opencv获取摄像头内容的时候用下面的代码转一下
+
+```python
+capture.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter.fourcc('M','J','P','G'))
+```
+
+> 参考 https://blog.csdn.net/nick_young_qu/article/details/104658955
