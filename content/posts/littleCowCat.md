@@ -30,3 +30,7 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/m
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/8.jpg" >}}
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/9.jpg" caption="和小黑能一起玩了" >}}
+
+## 2023-08-18
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/2023-8-18.jpg" >}}
