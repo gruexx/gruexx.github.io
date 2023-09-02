@@ -255,7 +255,7 @@ plugin_header_X-From-Where = frp
 
 总之一直下一步，最后验证方式选择 **DNS(CANME)** 方式会比较简单
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/frp/freessl.png" caption="选择验证方式" src_l="https://blog.porrizx.cc:7103/data/blog-img/frp/freessl.png" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/frp/freessl.png" caption="选择验证方式" >}}
 
 根据auth info创建DNS解析记录就可以了
 

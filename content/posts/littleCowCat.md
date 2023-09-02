@@ -15,18 +15,18 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/m
 
 猜测有两个月大了，会用猫砂，会吃猫粮，不怕人，看来是只有猫德的小猫 🤔
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/1.jpg" caption="刚到家的时候" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/1.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/1.jpg" caption="刚到家的时候" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/2.jpg" caption="刚到家的时候" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/2.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/2.jpg" caption="刚到家的时候" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/3.jpg" caption="会玩猫爪板了" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/3.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/3.jpg" caption="会玩猫爪板了" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/7.jpg" caption="安逸的睡觉" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/7.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/7.jpg" caption="安逸的睡觉" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/4.jpg" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/4.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/4.jpg" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/5.jpg" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/5.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/5.jpg" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/8.jpg" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/8.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/8.jpg" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/9.jpg" caption="和小黑能一起玩了" src_l="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/9.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/littleCowCat/9.jpg" caption="和小黑能一起玩了" >}}
