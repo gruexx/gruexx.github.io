@@ -710,6 +710,11 @@ section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]
 #taxonomyTerm = ["HTML"]
 
+# FixIt 0.2.18 | 新增 面包屑导航配置
+[params.breadcrumb]
+enable = true
+sticky = false
+showHome = true
 
 [menu]
 [[menu.main]]

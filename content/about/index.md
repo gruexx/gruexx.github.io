@@ -8,7 +8,9 @@ title: "关于我"
 
 ## 个人信息 <img src="https://blog.porrizx.cc:7103/data/blog-img/logo.png" align='right' style="height:100px"/>
 
-我的GitHub地址 : https://github.com/porrizxx
+GitHub : https://github.com/porrizxx
+
+Gitee : https://gitee.com/zhou_zz
 
 ## 网站构成
 
