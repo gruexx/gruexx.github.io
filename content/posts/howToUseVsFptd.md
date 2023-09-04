@@ -4,7 +4,7 @@ date: 2023-08-01T09:42:12+08:00
 draft: false
 description: "如何使用vsftpd创建ftp服务器"
 tags: [ "vsftpd", "教程" ]
-categories: [ "学习" ]
+categories: [ "学习笔记" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/vsftpd/ftp.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/vsftpd/ftp.jpg"
 ---

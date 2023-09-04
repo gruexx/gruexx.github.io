@@ -5,7 +5,7 @@ date: 2023-08-30T17:27:59+08:00
 draft: false
 description: "Frp+Minio 用闲置笔记本搭建自己的OSS"
 tags: [ "Frp", "Minio", "oss", "内网穿透", "Nginx" ]
-categories: [ "学习", "教程" ]
+categories: [ "学习笔记", "教程" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.jpg"
 ---
