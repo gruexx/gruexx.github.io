@@ -2,7 +2,7 @@
 title: "树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测"
 subtitle: 基于摄像头的目标检测尝试
 date: 2023-08-07T12:09:38+08:00
-lastmod: 2023-09-01T18:33:38+08:00
+lastmod: 2023-09-05T11:04:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
 tags: [ "树莓派", "Yolov5",  "OpenCV", "摄像头", "目标检测", "onnx", "onnxruntime" ]
@@ -10,6 +10,8 @@ categories: [ "学习笔记" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 ---
+# 0 文章索引
+[树莓派（CM4/CM4IO）学习日志记录 【1】 基础](/posts/树莓派cm4cm4io学习日志记录-1-基础.html/)
 
 # 1 镜像烧录（EMMC版本）
 
@@ -323,7 +325,9 @@ def run(
     LOGGER.info(f'Speed: %.1fms pre-process, %.1fms inference, %.1fms NMS per image at shape {(1, 3, *imgsz)}' % t)
 ```
 
-> [detect.py 完整代码](https://gitee.com/zhou_zz/my_py_script/blob/master/piZxy02/v5/detect.py)
+> [detect.py 完整代码](https://gitee.com/zhou_zz/my_py_script/blob/master/pi_prod/ud/uart-ctl.py)
+> 
+> 2023/9/5 更新多摄像头实现方式
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" caption="拍的显示器比较模糊 但是也能识别到" >}}
 
@@ -347,4 +351,46 @@ def run(
 capture.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter.fourcc('M','J','P','G'))
 ```
 
-> 参考 https://blog.csdn.net/nick_young_qu/article/details/104658955
+> 参考文章 https://blog.csdn.net/nick_young_qu/article/details/104658955
+
+脚本样例
+
+```python
+import multiprocessing
+
+import cv2
+
+
+def camera(num):
+    print(num)
+    capture = cv2.VideoCapture(num)
+
+    capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter.fourcc('M', 'J', 'P', 'G'))
+
+    if capture.isOpened():
+        print(f'{num} open')
+        capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+        while True:
+            read_code, frame = capture.read()
+            if read_code:
+                cv2.imshow(str(num), frame)
+
+            k = cv2.waitKey(30) & 0xff
+            if k == 27:  # Esc for quit
+                break
+
+    capture.release()
+
+
+if __name__ == '__main__':
+    t_detect_0 = multiprocessing.Process(target=camera, args=(0,))
+    t_detect_1 = multiprocessing.Process(target=camera, args=(2,))
+
+    t_detect_0.start()
+    t_detect_1.start()
+
+    cv2.destroyAllWindows()
+
+```
