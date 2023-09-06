@@ -1,5 +1,5 @@
 ---
-title: "Vsftpd的使用"
+title: "Vsftpd 安装使用"
 date: 2023-08-01T09:42:12+08:00
 draft: false
 description: "如何使用vsftpd创建ftp服务器"
