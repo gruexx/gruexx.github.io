@@ -22,7 +22,7 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.j
 - 一个能联网的设备来做OSS
 - 一个域名及SSL证书
 
-## 2 frp安装
+# 2 frp安装
 
 下载frp的安装文件 https://github.com/fatedier/frp/releases/tag/v0.51.3
 
@@ -30,7 +30,7 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.j
 根据操作系统的不同下载不同格式的文件，但是服务端和客户端版本要保持一致
 {{< /admonition >}}
 
-### 2.1 服务端配置
+## 2.1 服务端配置
 
 我的服务端是Linux操作系统
 
@@ -72,7 +72,7 @@ ExecStart=/home/frps/frps -c /home/frps/frps.ini
 WantedBy=multi-user.target
 ```
 
-### 2.2 客户端配置
+## 2.2 客户端配置
 
 我的客户端是Windows操作系统
 
@@ -102,7 +102,7 @@ custom_domains = blog.porrizx.cc
 域名需要解析到服务端公网ip
 {{< /admonition >}}
 
-## 3 minio安装
+# 3 minio安装
 
 由于我是Windows系统，下载minio server Windows版本 http://minio.org.cn/download.shtml#/windows
 
@@ -117,7 +117,7 @@ C:\Users\11198\Desktop\minio\minio.exe server C:\Users\11198\Desktop\minio\data 
 
 登录控制台 `localhost:9001`
 
-## 4 nginx配置
+# 4 nginx配置
 
 nginx官网下载windows安装包 http://nginx.org/
 
@@ -192,7 +192,7 @@ server {
 
 进入**nginx.exe**所在目录，执行`start nginx`来启动nginx
 
-## 5 使用oss
+# 5 使用oss
 
 访问minio控制台 `https://域名:7003` 进行文件的管理
 
@@ -200,9 +200,9 @@ server {
 
 通过将博客中的图片都替换成了oss链接，极大提升了图片的加载速度
 
-## 6 其他
+# 6 其他
 
-### 6.1 一种不需要安装nginx的方式
+## 6.1 一种不需要安装nginx的方式
 
 frp提供了http转https的插件，直接在配置文件中启用即可，不需要再用nginx转发
 
@@ -249,7 +249,7 @@ plugin_host_header_rewrite = 127.0.0.1
 plugin_header_X-From-Where = frp
 ```
 
-### 6.2 免费的SSL证书申请方式
+## 6.2 免费的SSL证书申请方式
 
 使用**FreeSSL**创建证书 https://freessl.org/create-certificate
 
@@ -259,7 +259,7 @@ plugin_header_X-From-Where = frp
 
 根据auth info创建DNS解析记录就可以了
 
-### 6.3 minio图片访问权限设置
+## 6.3 minio图片访问权限设置
 
 一般创建的bucket的权限都是private，没有权限通过链接直接访问图片
 

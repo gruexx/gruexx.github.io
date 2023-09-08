@@ -41,4 +41,6 @@ password_file /etc/mosquitto/pwfile.example
 
 下载安装MQTTX https://mqttx.app/zh
 
-## 2.2 
+图形界面操作 比较简单 略
+
+
