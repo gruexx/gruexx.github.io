@@ -43,4 +43,28 @@ password_file /etc/mosquitto/pwfile.example
 
 图形界面操作 比较简单 略
 
+## 2.2 用python向mqtt发数据
 
+下面是一个例子，从串口接受数据并发送到mqtt主题
+
+```python
+import serial
+import paho.mqtt.client as mqtt
+
+ser = serial.Serial('/dev/ttyAMA2', 115200)  # Serial port name and baud rate
+mqtt_client = mqtt.Client()
+mqtt_client.username_pw_set('xxx', 'xxx')  # MQTT username and password
+
+
+def on_connect(client, userdata, flags, rc):
+    print('Connected to MQTT broker with result code ' + str(rc))
+
+
+mqtt_client.on_connect = on_connect
+mqtt_client.connect('xxx.xxx.xxx.xxx', 1883)  # MQTT server IP address and port number
+mqtt_client.loop_start()
+while True:
+    data = ser.read(1024)  # Read serial data and decode it
+    # print(data)  # Print data to console
+    mqtt_client.publish('pi-test', data)  # Publish data to MQTT topic
+```
