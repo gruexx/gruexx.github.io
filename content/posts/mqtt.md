@@ -68,3 +68,14 @@ while True:
     # print(data)  # Print data to console
     mqtt_client.publish('pi-test', data)  # Publish data to MQTT topic
 ```
+
+{{< admonition tip>}}
+python连接MQTT连接错误码：
+
+- rc=0：连接成功
+- rc=1：协议版本不接受
+- rc=2：无效客户端标识符被拒绝
+- rc=3：服务不可用
+- rc=4：用户名或密码错误
+- rc=5：无权连接
+{{< /admonition >}}
