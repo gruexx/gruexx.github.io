@@ -810,11 +810,9 @@ if __name__ == '__main__':
 
 > 2023/9/5 更新多摄像头实现方式
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" caption="拍的显示器比较模糊
-但是也能识别到" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" caption="拍的显示器比较模糊但是也能识别到" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect-pi.png" caption="在树莓派上运行 每张图片的推理速度在200ms左右
-输出视频能有5帧左右" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect-pi.png" caption="在树莓派上运行 每张图片的推理速度在200ms左右输出视频能有5帧左右" >}}
 
 # 5 遇到的问题和解决方法
 
