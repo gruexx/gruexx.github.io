@@ -1,9 +1,8 @@
 ---
-title: Ntrip问题记录
-subtitle:
+title: Ntrip 问题记录
 date: 2023-09-12T17:13:10+08:00
 draft: false
-description: Mqtt 安装使用
+description: Ntrip 问题记录
 tags: [ "ntrip" ]
 categories: [ "学习笔记" ]
 ---
