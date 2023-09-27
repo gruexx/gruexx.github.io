@@ -1,6 +1,8 @@
 ---
 title: "树莓派（CM4·CM4IO）学习日志记录 【1】 基础"
+subtitle: 树莓派基础功能
 date: 2023-08-02T11:50:05+08:00
+lastmod: 2023-09-27T16:40:38+08:00
 draft: false
 description: "树莓派镜像烧录串口UART蓝牙"
 tags: [ "树莓派", "镜像烧录", "串口UART", "蓝牙" ]
@@ -146,7 +148,7 @@ CM4有6个UART，其中默认的开启的串口**UART0**和**UART1**都是**GPIO
 dtoverlay -h uart0
 ```
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi/uart0.png" caption="uart0串口信息 GPIO14输出 GPIO15输入" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi/uart0.png" caption="uart0串口信息 GPIO14输出GPIO15输入" >}}
 
 现在要开启剩余的4个UART串口
 
@@ -275,9 +277,9 @@ pair 40:F9:46:50:32:69
 
    {{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi/bluez.png" caption="蓝牙配置文件修改后" >}}
 
-    > ExecStart=/usr/libexec/bluetooth/bluetoothd -C
-    > 
-    > ExecStartPost=/usr/bin/sdptool add SP    
+   > ExecStart=/usr/libexec/bluetooth/bluetoothd -C
+   >
+   > ExecStartPost=/usr/bin/sdptool add SP
 
 3. `sudo reboot` 重启树莓派
 
@@ -370,3 +372,23 @@ systemctl restart rfcomm
 # 状态
 systemctl status rfcomm
 ```
+
+## 5.6 自动确认蓝牙的配对请求设置
+
+配置`bluetoothctl`的代理模式为`NoInputNoOutput` 这将允许树莓派自动确认来自其他设备的配对请求，而无需用户手动确认
+
+以下是具体的步骤：
+
+```shell
+# 进入蓝牙控制台
+bluetoothctl
+
+# 代理模式设置
+agent off
+
+agent NoInputNoOutput
+
+default-agent
+```
+
+设置完后，蓝牙配对时只需要在连接端点击配对确认
