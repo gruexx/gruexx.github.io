@@ -392,3 +392,31 @@ default-agent
 ```
 
 设置完后，蓝牙配对时只需要在连接端点击配对确认
+
+但是这种方法在退出`quit`蓝牙控制回话的时候就失效了
+
+用Python写一个脚本解决
+
+```python
+def auto_pair():
+    # 启动bluetoothctl会话
+    bluetoothctl = subprocess.Popen(['bluetoothctl'], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE,
+                                    text=True)
+
+    # 配置代理模式和启用自动确认模式
+    commands = [
+        'power on',  # 打开蓝牙适配器
+        'agent off',  # 启用配对模式
+        'discoverable on',  # 启用可被其他设备检测到的模式
+        'agent NoInputNoOutput',  # 设置代理模式为NoInputNoOutput
+        'default-agent'  # 将代理设置为默认代理
+    ]
+
+    for cmd in commands:
+        bluetoothctl.stdin.write(cmd + '\n')
+        bluetoothctl.stdin.flush()
+        time.sleep(1)  # 等待一些时间，确保每个命令有足够的时间执行
+
+    bluetoothctl.wait()
+```
