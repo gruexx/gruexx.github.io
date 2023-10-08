@@ -420,3 +420,25 @@ def auto_pair():
 
     bluetoothctl.wait()
 ```
+
+## 5.7 蓝牙socket通讯
+
+```python
+import bluetooth
+
+
+# 设置蓝牙服务
+server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+server_sock.bind(("", bluetooth.PORT_ANY))
+server_sock.listen(1)
+
+logger.info("等待手机连接...")
+client_sock, client_info = server_sock.accept()
+logger.info("手机已连接!")
+logger.info(client_info)
+```
+
+如上是一个手机连接树莓派蓝牙的实例
+
+建立socket通讯后，即可通过`client_sock.send()`和`client_sock.recv()`来发送和接收数据
+
