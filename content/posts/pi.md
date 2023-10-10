@@ -11,6 +11,10 @@ featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/pi/pinOut.png"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi/pinOut.png"
 ---
 
+# 0 文章索引
+
+[树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测](/posts/树莓派cm4学习日志记录-2-opencv-yolov5-摄像头-目标检测.html/)
+
 # 1 镜像烧录（EMMC版本）
 
 ## 1.1 下载镜像

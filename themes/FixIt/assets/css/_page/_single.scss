@@ -8,7 +8,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 140%;
-  
+
     .icon-repost {
       color: var(--#{$prefix}success);
       display: inline-block;
@@ -49,7 +49,7 @@
 
     .author {
       font-size: 1.05rem;
-      
+
       img.avatar {
         width: 1.3rem;
         height: 1.3rem;
@@ -251,7 +251,7 @@
               background-color: lighten($table-background-color-dark, 2.75%);
             }
           }
-          
+
           & tr:hover {
             background: darken($table-background-color, 4.5%);
 
@@ -329,7 +329,7 @@
 
       [data-theme='dark'] & {
         color: $blockquote-color-dark;
-        border-left-color: $global-border-color-dark;
+        border-left-color: #1ee5c6;
       }
 
       @include link(false, true);
