@@ -1,5 +1,5 @@
 ---
-title: Sqlite3 笔记
+title: Sqlite3 安装使用记录
 subtitle: 笔记自用
 date: 2023-10-09T09:46:57+08:00
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: Mqtt 安装使用
-subtitle: 服务端客户端安装记录
+title: Mqtt 安装使用记录
+subtitle: 笔记自用
 date: 2023-09-06T10:30:59+08:00
 draft: false
 description: Mqtt 安装使用
