@@ -6,8 +6,8 @@ draft: false
 description: Nexus部署记录
 tags: [ "Nexus", "Maven", "Linux" ]
 categories: [ "学习笔记" ]
-featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/nexus/bbts_hg.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/nexus/bbts_hg_half.jpg"
+featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/lrout/hyd.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/lrout/hyd.jpg"
 ---
 
 # 1 部署
