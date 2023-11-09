@@ -6,6 +6,8 @@ draft: false
 description: Gitlab 搭建记录
 tags: [ "gitlab", "docker", "gitlab-runner", "CI/CD" ]
 categories: [ "学习笔记" ]
+featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/gitlab/moon.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/gitlab/moon.jpg"
 ---
 
 # 1 gitlab
