@@ -12,10 +12,13 @@ categories: [ "学习笔记" ]
 
 ## 1.1 docker中安装gitlab
 
-执行 `docker pull gitlab/gitlab-ce:latest` 安装gitlab
+```shell
+# 安装gitlab
+docker pull gitlab/gitlab-ce:latest
 
-执行 `docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce`
-启动gitlab
+# 启动gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+```
 
 通过ip和端口（这里是1028）就可以访问gitlab前端界面了
 
@@ -23,10 +26,13 @@ categories: [ "学习笔记" ]
 
 ## 2.1 docker中安装gitlab-runner
 
-执行 `docker pull gitlab/gitlab-runner:latest` 安装gitlab-runner
+```shell
+# 安装gitlab-runner
+docker pull gitlab/gitlab-runner:latest
 
-执行 `docker run -d --name gitlab-runner --restart always -v /home/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest`
-启动gitlab-runner
+# 启动gitlab-runner
+docker run -d --name gitlab-runner --restart always -v /home/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest
+```
 
 ## 2.2 runner注册及配置
 
@@ -154,3 +160,81 @@ deploy-dist:
 ```
 
 在项目仓库**CI/CD**界面查看流水线运行情况
+
+# 4 gitlab升级
+
+## 4.1 获取upgrade-path
+在**仪表盘**能看到我的gitlab版本是`14.6.1`，由于gitlab不能跨大版本升级，要升级到最新版本`16.5.1`要先构建**upgrade-path**
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/gitlab/version.jpg" caption="gitlab版本" >}}
+
+使用gitlab提供的生成**upgrade-path**的工具
+
+https://gitlab-com.gitlab.io/support/toolbox/upgrade-path/
+
+输入自己当前版本以及要升级到的版本就能生成**upgrade-path**
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/gitlab/upgrade-path.jpg" caption="upgrade-path" >}}
+
+## 4.2 备份
+
+```shell
+# 备份
+docker exec -ti gitlab gitlab-rake gitlab:backup:create
+```
+备份过程中可能会有以下警告
+```text
+Warning: Your gitlab.rb and gitlab-secrets.json files contain sensitive data 
+and are not included in this backup. You will need these files to restore a backup.
+Please back them up manually.
+```
+以防万一备份下 `gitlab.rb` 和 `gitlab-secrets.json`
+
+```shell
+cp gitlab.rb /home/gitlab-backup/
+cp gitlab-secrets.json /home/gitlab-backup/
+```
+
+```shell
+# 查看备份情况
+ll /home/gitlab/data/backups/
+```
+备份完成会有一个tar包 `1699498444_2023_11_09_14.6.1_gitlab_backup.tar`
+
+## 4.3 开始升级
+
+根据**upgrade-path**顺序执行
+
+```shell
+# 14.6.1 => 14.9.5
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:14.9.5-ce.0
+
+# 14.9.5 => 14.10.5
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:14.10.5-ce.0
+
+# 14.10.5 => 15.0.5
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:15.0.5-ce.0
+
+# 15.0.5 => 15.4.6
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:15.4.6-ce.0
+
+# 15.4.6 => 15.11.13
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:15.11.13-ce.0
+
+# 15.11.13 => 16.1.5
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:16.1.5-ce.0
+
+# 16.1.5 => 16.3.6
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:16.3.6-ce.0
+
+# 16.3.6 => 16.5.1
+docker stop gitlab && docker rm gitlab
+docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:16.5.1-ce.0
+```
