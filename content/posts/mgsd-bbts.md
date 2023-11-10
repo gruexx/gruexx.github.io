@@ -8,8 +8,13 @@ tags: [ "模型拼装", "高达", "巴巴托斯" ]
 categories: [ "模型" ]
 ---
 
-# 快递到货了
+# 快递到货
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd-bbts-01.jpg" caption="盒子照1" >}}
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd-bbts-02.jpg" caption="盒子照2" >}}
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd-bbts-03.jpg" caption="盒子照3" >}}
+
+# 拼装
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/04.jpg" caption="拼装1" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/05.jpg" caption="拼装2" >}}
