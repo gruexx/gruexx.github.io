@@ -2,6 +2,7 @@
 title: MGSD-巴巴托斯 拼装记录
 subtitle: 小小的也很可爱
 date: 2023-11-08T18:49:53+08:00
+lastmod: 2023-11-13T01:37:38+08:00
 draft: false
 description: "MGSD 巴巴托斯"
 tags: [ "模型拼装", "高达", "巴巴托斯" ]
