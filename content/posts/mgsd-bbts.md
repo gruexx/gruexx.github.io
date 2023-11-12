@@ -42,3 +42,5 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd11.jpg" >}}
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd12.jpg" >}}
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd13.jpg" >}}
+
+{{< music auto="https://music.163.com/#/song?id=37095620" >}}
