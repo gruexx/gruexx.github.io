@@ -6,6 +6,8 @@ draft: false
 description: "MGSD 巴巴托斯"
 tags: [ "模型拼装", "高达", "巴巴托斯" ]
 categories: [ "模型" ]
+featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd05.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd05.jpg"
 ---
 
 # 快递到货
@@ -16,5 +18,27 @@ categories: [ "模型" ]
 
 # 拼装
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/04.jpg" caption="拼装1" >}}
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/05.jpg" caption="拼装2" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/04.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/05.jpg" >}}
+
+# 完成
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/06.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/07.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/08.jpg" >}}
+
+# 上后期
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd01.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd02.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd03.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd04.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd05.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd06.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd07.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd08.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd09.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd10.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd11.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd12.jpg" >}}
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd13.jpg" >}}
