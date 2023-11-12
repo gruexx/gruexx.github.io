@@ -6,8 +6,8 @@ draft: false
 description: "MGSD 巴巴托斯"
 tags: [ "模型拼装", "高达", "巴巴托斯" ]
 categories: [ "模型" ]
-featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd05.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd05.jpg"
+featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd11.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/mgsd-bbts/mgsd10.jpg"
 ---
 
 # 快递到货
