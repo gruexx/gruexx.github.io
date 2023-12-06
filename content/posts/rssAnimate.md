@@ -53,3 +53,13 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/rssAnimate/dyj
 在设置页面可以修改订阅源更新间隔和最大链接展示设置
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/rssAnimate/qbit-rss-set.png" caption="RSS设置">}}
+
+## 4.2 TrackerList
+
+https://github.com/DeSireFire/animeTrackerList
+
+https://github.com/ngosang/trackerslist
+
+## 4.3 实测还能用的资源站
+
+http://www.kisssub.org/
