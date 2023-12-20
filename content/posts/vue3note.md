@@ -48,9 +48,9 @@ export default {
 ```
 引入
 ```css
-@tailwind base; /*似乎会影响到原有的css,可以不引入*/
+@tailwind base; 
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  /*只用到基础的 引用这个就可以了*/
 ```
 执行以上步骤后但是tailwind没有生效可以在`vite.config.js`中增加配置
 
