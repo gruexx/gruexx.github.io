@@ -96,19 +96,22 @@
 
     .featured-image-preview {
       width: 100%;
-      padding: 25% 0 0;
+      // padding: 25% 0 0; // 如果要按比例设置高度，请调整此百分比
+      padding: 0; // 移除padding使得高度按img的高度来显示
       position: relative;
-      margin: 20px 0 auto auto;
+      margin: 25px 0 auto auto;
       @include transition(transform 0.4s ease);
+      overflow: hidden; // 防止图像溢出容器
+      display: flex; // 使用flex布局可以更好地控制图像的定位
+      justify-content: center; //图像水平居中
+      align-items: center; //图像垂直居中
 
       img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
+        // position: absolute; 移除绝对定位
+        width: 100%; // 控制图像宽度始终为100%
+        height: auto; // 图片会根据其固有高度自动调整大小
         border-radius: 7px;
-        @include object-fit(cover);
+        @include object-fit(cover); // 保持纵横比
       }
 
       &:hover {
