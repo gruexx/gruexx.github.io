@@ -19,6 +19,9 @@ noscript = "FixIt 主題在啟用 JavaScript 的情況下效果最佳。"
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = "歸檔"
+
 [allSome]
 other = "所有{{ .Some }}"
 
@@ -28,6 +31,12 @@ other = "分類"
 [categories]
 other = "分類"
 
+[collection]
+other = "合集"
+
+[collections]
+other = "合集"
+
 [tag]
 other = "標籤"
 
@@ -36,14 +45,17 @@ other = "標籤"
 
 [posts]
 other = "文章"
-
-[taxonomy.totalwordCount]
-other = "總計約 {{ .Count }} 字"
 # === Taxonomy ===
 
 # === Section ===
 [section]
 recentlyUpdated = "最近更新"
+
+[section.totalWordCount]
+other = "總計約 {{ .Count }} 字"
+
+[section.archiveCounter]
+other = "共計 {{ .Count }} 篇文章"
 # === Section ===
 
 # === Pagination ===
@@ -80,9 +92,6 @@ searchPlaceholder = "搜尋文章標題或內容……"
 clear = "清除"
 cancel = "取消"
 noResultsFound = "沒有找到結果"
-lunrLanguageCode = "zh" # 不支持繁體中文
-lunrLanguageLib = "lib/lunr/lunr.zh.js"
-lunrSegmentitLib = "lib/lunr/lunr.segmentit.js"
 copyToClipboard = "複製到剪貼板"
 editLockTitle = "鎖定可編輯代碼塊"
 editUnLockTitle = "解鎖可編輯代碼塊"
@@ -98,16 +107,18 @@ other = "分享到"
 
 # === posts/single.html ===
 [single]
-contents= "目錄"
-repost= "轉貼"
-publishedOnDate= "發佈於 {{ .Date }}"
-includedInCategories= "收錄於 {{ .Categories }}"
+contents = "目錄"
+pin = "置頂"
+repost = "轉貼"
+publishedOnDate = "發佈於 {{ .Date }}"
 views = "次閱讀"
 comments = "條評論"
 author = "作者"
 updatedOnDate = "更新於 {{ .Date }}"
 readMarkdown = "閱讀原始文檔"
+viewSource = "查看原始碼"
 editThisPage = "編輯此頁"
+reportIssue = "報告問題"
 back = "返回"
 home = "主頁"
 readMore = "閱讀全文"
@@ -116,8 +127,17 @@ encryptedAbstract = "本文已加密，囙此其原始內容不可見！"
 encryptedMessage = "請輸入密碼"
 password = "密碼"
 encryptyAgain = "重新加密"
+relatedContent = "相關內容"
+
+[single.includedIn]
+categories = "收錄於 {{ .Categories }}"
+collections = "收錄於 {{ .Collections }}"
+both = "收錄於 {{ .Categories }} 和 {{ .Collections }}"
 
 [single.wordCount]
+other = "{{ .Count }} 字"
+
+[single.fuzzyWordCount]
 other = "約 {{ .Count }} 字"
 
 [single.readingTime]

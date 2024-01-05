@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Toate {{ .Some }}"
 
@@ -29,6 +32,12 @@ other = "Categorie"
 [categories]
 other = "Categorii"
 
+[collection]
+other = ""
+
+[collections]
+other = ""
+
 [tag]
 other = "Etichetă"
 
@@ -37,15 +46,19 @@ other = "Etichete"
 
 [posts]
 other = "Articole"
-
-[taxonomy.totalwordCount]
-one = ""
-other = ""
 # === Taxonomy ===
 
 # === Section ===
 [section]
 recentlyUpdated = "Actualizat recent"
+
+[section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
@@ -82,8 +95,6 @@ searchPlaceholder = "Căutarea titlului sau conținutului articolului ..."
 clear = "Golire"
 cancel = "Anulare"
 noResultsFound = "Nici un rezultat gasit"
-lunrLanguageCode = "ro"
-lunrLanguageLib = "lib/lunr/lunr.ro.js"
 copyToClipboard = "Copiați în clipboard"
 editLockTitle = "Blocați blocul de cod editabil"
 editUnLockTitle = "Deblocați blocul de cod editabil"
@@ -99,16 +110,18 @@ other = "Distribuie pe"
 
 # === posts/single.html ===
 [single]
-contents= "Cuprins"
-repost= ""
-publishedOnDate= "publicat la {{ .Date }}"
-includedInCategories= "inclus în {{ .Categories }}"
+contents = "Cuprins"
+pin = ""
+repost = ""
+publishedOnDate = "publicat la {{ .Date }}"
 views = "vizualizări"
 comments = "comentarii"
 author = "Autor"
 updatedOnDate = "Actualizat la {{ .Date }}"
 readMarkdown = "Citire Markdown"
+viewSource = ""
 editThisPage = "Editați această pagină"
+reportIssue = ""
 back = "Înapoi"
 home = "Acasă"
 readMore = "Citește mai mult"
@@ -117,10 +130,19 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Parolă"
 encryptyAgain = ""
+relatedContent = "Conținut înrudit"
+
+[single.includedIn]
+categories = "inclus în {{ .Categories }}"
+collections = "inclus în {{ .Collections }}"
+both = "inclus în {{ .Categories }} și {{ .Collections }}"
 
 [single.wordCount]
 one = "Un cuvânt"
 other = "{{ .Count }} cuvinte"
+
+[single.fuzzyWordCount]
+other = "Aproximativ {{ .Count }} cuvinte"
 
 [single.readingTime]
 one = "Un minut"

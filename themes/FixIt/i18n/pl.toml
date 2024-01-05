@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Wszystkie {{ .Some }}"
 
@@ -29,6 +32,12 @@ other = "Kategoria"
 [categories]
 other = "Kategorie"
 
+[collection]
+other = ""
+
+[collections]
+other = ""
+
 [tag]
 other = "Tag"
 
@@ -37,15 +46,19 @@ other = "Tagi"
 
 [posts]
 other = "Posty"
-
-[taxonomy.totalwordCount]
-one = ""
-other = ""
 # === Taxonomy ===
 
 # === Section ===
 [section]
 recentlyUpdated = "Ostatnio zaktualizowane"
+
+[section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
@@ -82,7 +95,6 @@ searchPlaceholder = "Wyszukaj tytuł lub treść artykułu ..."
 clear = "Pusty"
 cancel = "Anuluj"
 noResultsFound = "Nie znaleziono wyników"
-lunrLanguageCode = "pl"
 copyToClipboard = "Skopiuj do schowka"
 editLockTitle = "Zablokuj edytowalny blok kodu"
 editUnLockTitle = "Odblokuj edytowalny blok kodu"
@@ -98,16 +110,18 @@ other = "Udostępnij na"
 
 # === posts/single.html ===
 [single]
-contents= "Spis treści"
-repost= ""
-publishedOnDate= "opublikowano {{ .Date }}"
-includedInCategories= "zawarty w {{ .Categories }}"
+contents = "Spis treści"
+pin = ""
+repost = ""
+publishedOnDate = "opublikowano {{ .Date }}"
 views = "wyświetleń"
 comments = "komentarzy"
 author = "Autor"
 updatedOnDate = "Zaktualizowano {{ .Date }}"
 readMarkdown = "Zobacz Markdown"
+viewSource = ""
 editThisPage = "Edytuj tą stronę"
+reportIssue = ""
 back = "Wstecz"
 home = "Strona główna"
 readMore = "Czytaj więcej"
@@ -116,10 +130,19 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Hasło"
 encryptyAgain = ""
+relatedContent = "Powiązane treści"
+
+[single.includedIn]
+categories = "zawarty w {{ .Categories }}"
+collections = "zawarty w {{ .Collections }}"
+both = "zawarty w {{ .Categories }} i {{ .Collections }}"
 
 [single.wordCount]
 one = "Jedno słowo"
 other = "{{ .Count }} słów"
+
+[single.fuzzyWordCount]
+other = "Około {{ .Count }} słów"
 
 [single.readingTime]
 one = "Jedna minuta"

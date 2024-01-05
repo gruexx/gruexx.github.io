@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Todo {{ .Some }}"
 
@@ -29,6 +32,12 @@ other = "Categoría"
 [categories]
 other = "Categorías"
 
+[collection]
+other = ""
+
+[collections]
+other = ""
+
 [tag]
 other = "Etiqueta"
 
@@ -37,15 +46,19 @@ other = "Etiquetas"
 
 [posts]
 other = "Artículos"
-
-[taxonomy.totalwordCount]
-one = ""
-other = ""
 # === Taxonomy ===
 
 # === Section ===
 [section]
 recentlyUpdated = "Actualizado recientemente"
+
+[section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
@@ -82,8 +95,6 @@ searchPlaceholder = "Busca títulos o contenido..."
 clear = "Limpiar"
 cancel = "Cancelar"
 noResultsFound = "No se encontraron resultados"
-lunrLanguageCode = "es"
-lunrLanguageLib = "lib/lunr/lunr.es.js"
 copyToClipboard = "Copiar al portapapeles"
 editLockTitle = "Bloquear bloque de código editable"
 editUnLockTitle = "Desbloquear bloque de código editable"
@@ -99,16 +110,18 @@ other = "Compartir en"
 
 # === posts/single.html ===
 [single]
-contents= "Contenido"
-repost= ""
-publishedOnDate= "publicado el {{ .Date }}"
-includedInCategories= "incluido en {{ .Categories }}"
+contents = "Contenido"
+pin = ""
+repost = ""
+publishedOnDate = "publicado el {{ .Date }}"
 views = "vistas"
 comments = "Comentarios"
 author = "Autor"
 updatedOnDate = "Actualizado el {{ .Date }}"
 readMarkdown = "Leer Markdown"
+viewSource = ""
 editThisPage = "Editar esta página"
+reportIssue = ""
 back = "Regresar"
 home = "Inicio"
 readMore = "Leer más"
@@ -117,10 +130,19 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Contraseña"
 encryptyAgain = ""
+relatedContent = "Contenido relacionado"
+
+[single.includedIn]
+categories = "incluido en {{ .Categories }}"
+collections = "incluido en {{ .Collections }}"
+both = "incluido en {{ .Categories }} y {{ .Collections }}"
 
 [single.wordCount]
 one = "Una palabra"
 other = "{{ .Count }} palabras"
+
+[single.fuzzyWordCount]
+other = "Aproximadamente {{ .Count }} palabras"
 
 [single.readingTime]
 one = "Un minuto"
