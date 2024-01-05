@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.117.0-b2f0696cad918fb61420a6aff173eb36662b406e+extended"
+    }
+  }
+}
