@@ -16,9 +16,9 @@ categories: [ "工具" ]
 
 Windows 文件快速索引
 
-# [Snipaste](https://zh.snipaste.com/)
+# ~~[Snipaste](https://zh.snipaste.com/)~~ [PixPin](https://pixpinapp.com/)
 
-简单但强大的截图工具
+~~简单但强大的截图工具~~ 在Snipaste的基础上增加了OCR
 
 # [Bingsnap](https://www.carthagosoft.net/BingSnap.php)
 
