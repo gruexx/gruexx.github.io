@@ -1,5 +1,5 @@
 ---
-title: "树莓派（CM4·CM4IO）学习日志记录 【1】 基础"
+title: "树莓派(CM4) 学习记录 #1"
 subtitle: 树莓派基础功能
 date: 2023-08-02T11:50:05+08:00
 lastmod: 2023-09-27T16:40:38+08:00
@@ -13,7 +13,9 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi/pinOut.png"
 
 # 0 文章索引
 
-[树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测](/posts/树莓派cm4学习日志记录-2-opencv-yolov5-摄像头-目标检测.html/)
+[树莓派4 学习记录 #2](/pi2)
+
+[树莓派5 踩坑记录 #3](/pi3)
 
 # 1 镜像烧录（EMMC版本）
 

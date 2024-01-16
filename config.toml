@@ -238,7 +238,7 @@ disclaimer = ""
 [params.home.posts]
 enable = true
 # 主页每页显示文章数量
-paginate = 6
+paginate = 5
 
 #  作者的社交信息设置
 [params.social]

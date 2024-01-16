@@ -1,5 +1,5 @@
 ---
-title: "树莓派（CM4）学习日志记录 【2】 OpenCV Yolov5 摄像头 目标检测"
+title: "树莓派4 学习记录 #2"
 subtitle: 基于摄像头的目标检测尝试
 date: 2023-08-07T12:09:38+08:00
 lastmod: 2023-09-05T11:04:38+08:00
@@ -13,7 +13,9 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 
 # 0 文章索引
 
-[树莓派（CM4/CM4IO）学习日志记录 【1】 基础](/posts/树莓派cm4cm4io学习日志记录-1-基础.html/)
+[树莓派(CM4) 学习记录 #1](/pi)
+
+[树莓派5 踩坑记录 #3](/pi3)
 
 # 1 镜像烧录（EMMC版本）
 
