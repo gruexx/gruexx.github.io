@@ -36,7 +36,7 @@
 
 .single {
   .single-title {
-    padding: 1rem 0 0.5rem;
+    padding: 1.2rem 0 1rem;
     margin: 0;
     font-size: 1.6rem;
     font-weight: bold;
@@ -238,6 +238,7 @@
       dt {
         margin-bottom: 0.5em;
       }
+
       dd {
         margin-inline-start: 1.25em;
       }
@@ -354,6 +355,7 @@
         vertical-align: text-bottom;
       }
     }
+
     svg {
       max-width: 100%;
     }

@@ -113,7 +113,7 @@
         // position: absolute; 移除绝对定位
         width: 100%; // 控制图像宽度始终为100%
         height: auto; // 图片会根据其固有高度自动调整大小
-        border-radius: 13px;
+        border-radius: 4px;
         @include object-fit(cover); // 保持纵横比
       }
 
@@ -175,7 +175,7 @@
     }
 
     .post-footer {
-      margin-top: 1.4rem;
+      margin-top: 0.4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
