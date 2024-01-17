@@ -4,7 +4,7 @@ subtitle: 👀
 date: 2024-01-16T17:23:20+08:00
 draft: false
 description: 树莓派5踩坑记录
-tags: [ "树莓派" ]
+tags: [ "树莓派", "python" ]
 categories: [ "学习笔记" ]
 ---
 
