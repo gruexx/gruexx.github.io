@@ -2,10 +2,9 @@
 @import '../_partials/_single/fixit-decryptor';
 
 .grid-container {
-  display: grid;
-  gap: 20px; /* 调整间隙 */
-  grid-template-columns: 1fr 3fr; /* 默认为有图片时的比例 */
-  grid-template-areas: "image content"; /* 指定区域名称 */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .grid-featured-image {
@@ -13,7 +12,8 @@
 }
 
 .content-container {
-  grid-area: content; /* 通过区域名称来摆放 */
+  flex: 1;
+  padding-right: 20px; // 根据需要调整间隔
 }
 
 /* 当没有特色图片时的布局 */

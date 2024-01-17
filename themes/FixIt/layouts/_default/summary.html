@@ -17,6 +17,7 @@
     {{- end -}}
     <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
   </h2>
+
   {{- /* Featured image */ -}}
   {{- $image := $params.featuredimagepreview | default $params.featuredimage -}}
   <div class="grid-container {{ if not $image }}no-featured-image{{ end }}">
@@ -26,13 +27,7 @@
   {{- with .Resources.GetMatch "featured-image-preview" -}}
     {{- $image = .RelPermalink -}}
   {{- end -}}
-  {{- with $image -}}
-    <div class="featured-image-preview grid-featured-image">
-      <a href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
-        {{- dict "Src" . "Title" $.Description "Alt" $.Title "Resources" $.Resources | partial "plugin/image.html" -}}
-      </a>
-    </div>
-  {{- end -}}
+
 
     <div class="content-container">
 
@@ -58,6 +53,14 @@
     {{- end -}}
   </div>
     </div>
+
+    {{- with $image -}}
+    <div class="featured-image-preview grid-featured-image">
+      <a href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
+        {{- dict "Src" . "Title" $.Description "Alt" $.Title "Resources" $.Resources | partial "plugin/image.html" -}}
+      </a>
+    </div>
+    {{- end -}}
   </div>
 
   {{- /* Footer */ -}}

@@ -98,6 +98,7 @@
     }
 
     .featured-image-preview {
+      flex-basis: 30%;
       width: 100%;
       // padding: 25% 0 0; // 如果要按比例设置高度，请调整此百分比
       padding: 0; // 移除padding使得高度按img的高度来显示
@@ -115,6 +116,7 @@
         height: auto; // 图片会根据其固有高度自动调整大小
         border-radius: 4px;
         @include object-fit(cover); // 保持纵横比
+        box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3);
       }
 
       &:hover {
