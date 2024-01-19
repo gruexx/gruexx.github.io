@@ -4,8 +4,6 @@ date: 2021-03-17T13:49:56+08:00
 draft: false
 tags: [ "时间线" ]
 categories: [ "日志" ]
-featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/tusiai/start.png"
-featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/tusiai/start.png"
 ---
 
 # 时间线
