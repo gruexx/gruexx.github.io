@@ -4,7 +4,7 @@ date: 2023-09-12T17:13:10+08:00
 draft: false
 description: Ntrip 问题记录
 tags: [ "ntrip" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 1 如何将挂载点挂载到caster

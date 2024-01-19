@@ -5,7 +5,7 @@ date: 2024-01-16T19:54:12+08:00
 draft: false
 description: 树莓派5踩坑记录
 tags: [ "python" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 1 序

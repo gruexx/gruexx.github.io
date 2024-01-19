@@ -5,7 +5,7 @@ date: 2023-10-09T09:46:57+08:00
 draft: false
 description: "Sqlite3"
 tags: [ "Sqlite3", "Linux", "Python" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 安装

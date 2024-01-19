@@ -6,7 +6,7 @@ lastmod: 2023-09-05T11:04:38+08:00
 draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
 tags: [ "树莓派", "Yolov5",  "OpenCV", "摄像头", "目标检测", "onnx", "onnxruntime" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 ---

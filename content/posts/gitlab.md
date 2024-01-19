@@ -5,7 +5,7 @@ date: 2023-09-12T17:50:14+08:00
 draft: false
 description: Gitlab 搭建记录
 tags: [ "gitlab", "docker", "gitlab-runner", "CI/CD" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/gitlab/moon.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/gitlab/moon.jpg"
 ---

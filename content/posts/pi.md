@@ -6,7 +6,7 @@ lastmod: 2023-09-27T16:40:38+08:00
 draft: false
 description: "树莓派镜像烧录串口UART蓝牙"
 tags: [ "树莓派", "镜像烧录", "串口UART", "蓝牙" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/pi/pinOut.png"
 featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi/pinOut.png"
 ---

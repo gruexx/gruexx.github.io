@@ -5,7 +5,7 @@ date: 2024-01-02T09:39:23+08:00
 draft: false
 description: "Ubuntu离线apt安装应用"
 tags: [ "ubuntu", "python" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 1 服务器准备

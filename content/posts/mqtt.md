@@ -5,7 +5,7 @@ date: 2023-09-06T10:30:59+08:00
 draft: false
 description: Mqtt 安装使用
 tags: [ "Mqtt" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 1 服务端

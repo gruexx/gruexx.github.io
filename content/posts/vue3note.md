@@ -5,7 +5,7 @@ subtitle: 笔记自用 仅供参考
 draft: false
 description: "Vue3笔记"
 tags: [ "vue3" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # npm 换源

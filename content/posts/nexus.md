@@ -5,7 +5,7 @@ date: 2023-11-07T10:13:35+08:00
 draft: false
 description: Nexus部署记录
 tags: [ "Nexus", "Maven", "Linux" ]
-categories: [ "学习笔记" ]
+categories: [ "笔记" ]
 ---
 
 # 1 部署
