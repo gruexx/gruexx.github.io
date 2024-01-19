@@ -1,6 +1,6 @@
 ---
 title: "树莓派5 学习记录 #3"
-subtitle: 👀
+subtitle: "👀"
 date: 2024-01-16T17:23:20+08:00
 draft: false
 description: 树莓派5踩坑记录
@@ -38,4 +38,8 @@ https://gpiozero.readthedocs.io/en/stable/migrating_from_rpigpio.html
 首先安装并打开Win32DiskImager，选择好映像文件（镜像名称自己定义）和设备，点击读取就开始制作，等进度条走完就完成了
 
 {{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi3/win32.png" caption="制作镜像中" >}}
+
+**缺点**：Win32DiskImager制作的镜像文件的大小通常与SD卡的总容量相同，而不是仅与SD卡上已用空间的大小相同。这是因为镜像工具会复制SD卡上的所有扇区，包括空白和未使用的部分。即使这些部分没有存储数据。最后导致镜像文件很大
+
+**解决方法**：在创建镜像之前，可以手动减小SD卡上分区的大小，在使用Win32DiskImager时勾选上`仅读取已分配分区`
 
