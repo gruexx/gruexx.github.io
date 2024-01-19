@@ -1,5 +1,5 @@
 ---
-title: "树莓派5 踩坑记录 #3"
+title: "树莓派5 学习记录 #3"
 subtitle: 👀
 date: 2024-01-16T17:23:20+08:00
 draft: false
@@ -30,4 +30,12 @@ categories: [ "学习笔记" ]
 官方文档也有从`rpi-gpio`迁移到`gpiozero`的例子
 
 https://gpiozero.readthedocs.io/en/stable/migrating_from_rpigpio.html
+
+# 3 镜像制作
+
+在windows上使用 [Win32DiskImager](https://win32diskimager.org/) 来制作镜像
+
+首先安装并打开Win32DiskImager，选择好映像文件（镜像名称自己定义）和设备，点击读取就开始制作，等进度条走完就完成了
+
+{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi3/win32.png" caption="制作镜像中" >}}
 
