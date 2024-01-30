@@ -38,6 +38,15 @@ SHOW VARIABLES LIKE 'log_bin_basename';
 # binlog列表
 SHOW BINARY LOGS;
 ```
+由于数据库服务器在内网，通过跳板机进行链接
+
+```shell
+# ssh连接
+ssh root@xxx
+
+# scp传输文件
+scp /mnt/jxxt/mysql/data/mysql-bin.000049 root@xxx:/home
+```
 
 # 1 前言
 
