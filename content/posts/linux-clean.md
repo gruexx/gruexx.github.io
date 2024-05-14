@@ -1,19 +1,20 @@
 ---
-title: Linux 空间清理
-subtitle: Linux 空间清理
-date: 2024-04-15T16:54:01+08:00
-draft: false
-tags: [ "my2sql", "go", "mysql" ]
-categories: [ "笔记" ]
+title: Linux 存储空间清理指南
+subtitle: 高效查找和清理大文件及无用文件，保持系统流畅运行
+date: 2024-04-15T16:54:01+08:00  
+draft: false  
+tags: ["my2sql", "go", "mysql"]  
+categories: ["笔记"]
+
 ---
 
 在 Linux 系统中，存储空间不足可能会导致系统运行缓慢或无法正常工作。本文将介绍一些方法来查找大文件和无用文件，并进行清理以释放存储空间。
 
 ## 目录
-
 1. [查找大文件](#查找大文件)
 2. [删除无用文件](#删除无用文件)
 3. [自动化清理](#自动化清理)
+4. [清理 journalctl 日志](#清理-journalctl-日志)
 
 ## 查找大文件
 
@@ -94,6 +95,40 @@ crontab -e
 
 # 添加以下行，每天凌晨 2 点执行清理脚本
 0 2 * * * /path/to/cleanup_script.sh
+```
+
+## 清理 journalctl 日志
+
+`journalctl` 是 systemd 的日志管理工具，日志文件可能会占用大量空间，可以通过以下命令清理：
+
+### 查看日志占用空间
+
+```shell
+# 查看 journal 日志占用的磁盘空间
+sudo journalctl --disk-usage
+```
+
+### 清理旧日志
+
+```shell
+# 清理超过两周的日志
+sudo journalctl --vacuum-time=2weeks
+
+# 或者清理日志直到总大小低于 1GB
+sudo journalctl --vacuum-size=1G
+```
+
+### 永久设置日志占用空间限制
+
+```shell
+# 编辑 journal 配置文件
+sudo nano /etc/systemd/journald.conf
+
+# 设置 SystemMaxUse 限制日志占用的最大空间
+SystemMaxUse=1G
+
+# 保存并退出编辑器后重启 systemd-journald 服务
+sudo systemctl restart systemd-journald
 ```
 
 通过以上方法，可以有效管理和清理 Linux 系统中的存储空间，确保系统平稳运行。
