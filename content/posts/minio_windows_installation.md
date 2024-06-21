@@ -1,7 +1,7 @@
 ---
 title: Windows 上安装和启动 MinIO 以及设置端口
 subtitle: 详细介绍如何在 Windows 上安装和配置 MinIO
-date: 2024-06-21T17:00:00+08:00
+date: 2024-06-21T16:05:59+08:00
 draft: false
 description: 本文详细介绍了在 Windows 上安装 MinIO 并进行启动和端口设置的步骤。
 tags: [ "MinIO", "Windows", "安装", "配置" ]
