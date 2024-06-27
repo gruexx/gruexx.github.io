@@ -93,3 +93,36 @@ pause
 ## 备注
 
 确保你的防火墙允许 MinIO 使用的端口（如 `9000` 和 `9001`）。如果需要修改这些端口，记得同时在防火墙中更新配置。
+
+## 桶策略
+
+1. 允许匿名用户（即没有身份验证的用户）访问你的存储桶和其中的对象
+
+以下是一个示例策略，允许任何人读取 blog-img 存储桶中的所有对象：
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::blog-img"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::blog-img/*"
+            ]
+        }
+    ]
+}
+```
