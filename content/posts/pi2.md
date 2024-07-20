@@ -7,8 +7,8 @@ draft: false
 description: "树莓派（CM4）学习日志记录 【2-OpenCV Yolov5 摄像头 目标检测】"
 tags: [ "树莓派", "Yolov5",  "OpenCV", "摄像头", "目标检测", "onnx", "onnxruntime" ]
 categories: [ "笔记" ]
-featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
+featuredImage: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/main.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/main.jpg"
 ---
 
 # 0 文章索引
@@ -33,7 +33,7 @@ featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/pi2/main.jpg"
 
 - 使用官方的**树莓派镜像烧录器 Raspberry Pi Imager**进行烧录，镜像直接选择第一项，在设置里设置一下ssh，然后直接烧录
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/sl.png" caption="非常好用的工具" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/sl.png" caption="非常好用的工具" >}}
 
 {{< admonition tip "提醒" >}}
 不要忘了点击右下角的齿轮设置ssh用户名和密码
@@ -150,7 +150,7 @@ pip install -r requirement.txt
 
 最后，运行**labelImg.py**打开窗口，在窗口左侧设置输出格式为**YOLO**
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/labelImg.png" caption="labelImg 窗口" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/labelImg.png" caption="labelImg 窗口" >}}
 
 > [labelImg 下载地址](https://github.com/HumanSignal/labelImg/releases)
 >
@@ -160,7 +160,7 @@ pip install -r requirement.txt
 
 **train**是训练用的，**val**是验证用的，保证图片和txt文件名字对应就行
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/coco.png" caption="数据集格式" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/coco.png" caption="数据集格式" >}}
 
 ## 4.3 训练
 
@@ -172,7 +172,7 @@ pip install -r requirement.txt
 4. **'--epochs'** 训练的轮次
 5. **'--imgsz'** 图片尺寸 通常是 320或640
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/train.png" caption="train.py" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/train.png" caption="train.py" >}}
 
 修改完直接运行开始训练
 
@@ -186,7 +186,7 @@ pip install -r requirement.txt
 
 **best.pt**是最优结果；**last.pt**是最后一次结果，用于继续训练
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/results.png" caption="results.png" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/results.png" caption="results.png" >}}
 
 ## 4.5 预测
 
@@ -812,9 +812,9 @@ if __name__ == '__main__':
 
 > 2023/9/5 更新多摄像头实现方式
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect.png" caption="拍的显示器比较模糊但是也能识别到" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/detect.png" caption="拍的显示器比较模糊但是也能识别到" >}}
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi2/detect-pi.png" caption="在树莓派上运行 每张图片的推理速度在200ms左右输出视频能有5帧左右" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi2/detect-pi.png" caption="在树莓派上运行 每张图片的推理速度在200ms左右输出视频能有5帧左右" >}}
 
 # 5 遇到的问题和解决方法
 

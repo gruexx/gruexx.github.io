@@ -6,8 +6,8 @@ draft: false
 description: "Frp+Minio 用闲置笔记本搭建自己的OSS"
 tags: [ "Frp", "Minio", "oss", "内网穿透", "Nginx" ]
 categories: [ "笔记", "教程" ]
-featuredImage: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:7103/data/blog-img/frp/frp-main.jpg"
+featuredImage: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
+featuredImagePreview: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
 ---
 
 # 0 前言
@@ -255,7 +255,7 @@ plugin_header_X-From-Where = frp
 
 总之一直下一步，最后验证方式选择 **DNS(CANME)** 方式会比较简单
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/frp/freessl.png" caption="选择验证方式" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/freessl.png" caption="选择验证方式" >}}
 
 根据auth info创建DNS解析记录就可以了
 

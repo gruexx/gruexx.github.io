@@ -4,7 +4,7 @@ title: "关于我 PORRIZX"
 
 [//]: # ({{< music auto="https://music.163.com/#/song?id=2086529025" >}})
 
-## 个人信息 <img src="https://blog.porrizx.cc:7103/data/blog-img/logo.png" align='right' style="height:100px"/>
+## 个人信息 <img src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/logo.png" align='right' style="height:100px"/>
 
 GitHub : https://github.com/porrizxx
 

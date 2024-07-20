@@ -37,7 +37,7 @@ https://gpiozero.readthedocs.io/en/stable/migrating_from_rpigpio.html
 
 首先安装并打开Win32DiskImager，选择好映像文件（镜像名称自己定义）和设备，点击读取就开始制作，等进度条走完就完成了
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/pi3/win32.png" caption="制作镜像中" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi3/win32.png" caption="制作镜像中" >}}
 
 **缺点**：Win32DiskImager制作的镜像文件的大小通常与SD卡的总容量相同，而不是仅与SD卡上已用空间的大小相同。这是因为镜像工具会复制SD卡上的所有扇区，包括空白和未使用的部分。即使这些部分没有存储数据。最后导致镜像文件很大
 

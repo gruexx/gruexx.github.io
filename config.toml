@@ -47,7 +47,7 @@ disableThemeInject = false
 name = "porrizx"
 email = "1119864054@qq.com"
 link = "/about/"
-avatar = "https://blog.porrizx.cc:7103/data/blog-img/logo.png"
+avatar = "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/logo.png"
 
 #  公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
 [params.gitInfo]

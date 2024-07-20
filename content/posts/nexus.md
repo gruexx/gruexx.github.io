@@ -65,7 +65,7 @@ application-port=1029
 
 在设置中点击创建仓库
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/nexus/create_rpo.jpg" caption="创建仓库" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/nexus/create_rpo.jpg" caption="创建仓库" >}}
 
 选择 `maven(proxy)`，填写 `Name` 和 `Remote storage`
 
@@ -75,7 +75,7 @@ application-port=1029
 
 最后将创建的仓库加入到仓库 `maven-public` 中，这样当 `maven-public` 中找不到我们需要的jar时就会去阿里云的仓库里去找
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/nexus/public.jpg" caption="加入到仓库Members" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/nexus/public.jpg" caption="加入到仓库Members" >}}
 
 ## 2.2 上传本地jar
 
@@ -85,7 +85,7 @@ application-port=1029
 
 在 `pom.xml` 引用仓库 `maven-public` 的地址
 
-{{< image src="https://blog.porrizx.cc:7103/data/blog-img/nexus/pom.jpg" caption="pom.xml" >}}
+{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/nexus/pom.jpg" caption="pom.xml" >}}
 
 # 3 出现的问题
 
