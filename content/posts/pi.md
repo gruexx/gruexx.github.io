@@ -80,7 +80,7 @@ gpio readall
 pinout
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/gpio.png" caption="gpio readall 返回信息" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/gpio.png" caption="gpio readall 返回信息" >}}
 
 # 3 python 脚本编写
 
@@ -154,7 +154,7 @@ CM4有6个UART，其中默认的开启的串口**UART0**和**UART1**都是**GPIO
 dtoverlay -h uart0
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/uart0.png" caption="uart0串口信息 GPIO14输出GPIO15输入" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/uart0.png" caption="uart0串口信息 GPIO14输出GPIO15输入" >}}
 
 现在要开启剩余的4个UART串口
 
@@ -187,7 +187,7 @@ reboot
 dmesg | grep tty
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/tty.png" caption="ttyAMA1~4都开启了" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/tty.png" caption="ttyAMA1~4都开启了" >}}
 
 ### 4.2.2 查看串口对应的GPIO口
 
@@ -195,7 +195,7 @@ dmesg | grep tty
 sudo cat /sys/kernel/debug/pinctrl/fe200000.gpio-pinctrl-bcm2711/pinmux-pins
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/tty-pins.png" caption="串口和针脚的对应关系很明显了" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/tty-pins.png" caption="串口和针脚的对应关系很明显了" >}}
 
 > **可以得出各 UART 串口与 GPIO 对应关系：**
 >
@@ -221,7 +221,7 @@ sudo cat /sys/kernel/debug/pinctrl/fe200000.gpio-pinctrl-bcm2711/pinmux-pins
 >
 > GPIO13 = RXD5 -> ttyAMA4
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/J8-gpio.png" caption="图片更明显" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/J8-gpio.png" caption="图片更明显" >}}
 
 ### 4.2.3 测试串口是否连通
 
@@ -252,7 +252,7 @@ print(rev)
 python aurt-test.py
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/aurt-test.png" caption="执行结果" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/aurt-test.png" caption="执行结果" >}}
 
 **其他串口的测试同上**
 
@@ -281,7 +281,7 @@ pair 40:F9:46:50:32:69
 
 2. `sudo nano /etc/systemd/system/dbus-org.bluez.service` 修改蓝牙配置文件
 
-   {{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/bluez.png" caption="蓝牙配置文件修改后" >}}
+   {{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/bluez.png" caption="蓝牙配置文件修改后" >}}
 
    > ExecStart=/usr/libexec/bluetooth/bluetoothd -C
    >
@@ -299,7 +299,7 @@ pair 40:F9:46:50:32:69
 
 使用手机上的蓝牙调试的app连接树莓派的蓝牙
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/rf.png" caption="连接成功" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/pi/rf.png" caption="连接成功" >}}
 
 连接成功后可以看到多出来一个串口 **/dev/rfcomm0**，通过这个串口和手机通信
 

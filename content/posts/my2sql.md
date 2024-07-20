@@ -96,6 +96,6 @@ go build .
 my2sql -mode file -local-binlog-file mysql-bin.000049 -databases khjc -tables edu_record -start-datetime="2024-01-12 00:00:00" -stop-datetime="2024-01-18 16:00:00" -work-type 2sql -start-file mysql-bin.000049  -user xxx -password xxx -port xxx -host xxx -full-columns true
 ```
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/my2sql/output.png" caption="控制台输出" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/my2sql/output.png" caption="控制台输出" >}}
 
 在同目录下查看输出的sql文件

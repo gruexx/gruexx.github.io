@@ -40,7 +40,7 @@ docker run -d --name gitlab-runner --restart always -v /home/gitlab-runner/confi
 
 进入**管理中心**的**Runner**板块，点击右侧**注册一个实例runner**按钮，复制**token**
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/token.jpg" caption="注册一个实例runner" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/token.jpg" caption="注册一个实例runner" >}}
 
 执行 `docker exec -it b446f8c800d4 /bin/bash` 进入 `gitlab-runner`的容器内部
 
@@ -168,7 +168,7 @@ deploy-dist:
 ## 4.1 获取upgrade-path
 在**仪表盘**能看到我的gitlab版本是`14.6.1`，由于gitlab不能跨大版本升级，要升级到最新版本`16.5.1`要先构建**upgrade-path**
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/version.jpg" caption="gitlab版本" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/version.jpg" caption="gitlab版本" >}}
 
 使用gitlab提供的生成**upgrade-path**的工具
 
@@ -176,7 +176,7 @@ https://gitlab-com.gitlab.io/support/toolbox/upgrade-path/
 
 输入自己当前版本以及要升级到的版本就能生成**upgrade-path**
 
-{{< image src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/upgrade-path.jpg" caption="upgrade-path" >}}
+{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/gitlab/upgrade-path.jpg" caption="upgrade-path" >}}
 
 ## 4.2 备份
 
