@@ -1,16 +1,17 @@
 ---
 title: Linux 存储空间清理指南
 subtitle: 高效查找和清理大文件及无用文件，保持系统流畅运行
-date: 2024-04-15T16:54:01+08:00  
-draft: false  
-tags: ["my2sql", "go", "mysql"]  
-categories: ["笔记"]
+date: 2024-04-15T16:54:01+08:00
+draft: false
+tags: [ "my2sql", "go", "mysql" ]
+categories: [ "笔记" ]
 
 ---
 
 在 Linux 系统中，存储空间不足可能会导致系统运行缓慢或无法正常工作。本文将介绍一些方法来查找大文件和无用文件，并进行清理以释放存储空间。
 
 ## 目录
+
 1. [查找大文件](#查找大文件)
 2. [删除无用文件](#删除无用文件)
 3. [自动化清理](#自动化清理)
@@ -132,3 +133,43 @@ sudo systemctl restart systemd-journald
 ```
 
 通过以上方法，可以有效管理和清理 Linux 系统中的存储空间，确保系统平稳运行。
+
+## MySQL 磁盘清理
+
+1. **删除不必要的数据**:
+
+    * 删除旧的数据表或记录。
+    * 确保备份重要数据以防意外删除。
+
+   ```
+   DELETE FROM your_table WHERE condition;
+   DROP TABLE old_table;
+   
+   
+   ```
+
+2. **优化表**: 优化表可以重组数据，释放未使用的空间。
+
+   ```
+   OPTIMIZE TABLE your_table;
+   
+   
+   ```
+
+3. **清理日志文件**: MySQL 生成的日志文件可能会占用大量空间，可以定期清理。
+
+   ```
+   RESET MASTER;  # 清除所有二进制日志
+   PURGE BINARY LOGS BEFORE 'YYYY-MM-DD HH:MM:SS';  # 删除指定日期之前的二进制日志
+   
+   
+   ```
+
+4. **调整配置**: 在 `my.cnf` 配置文件中，调整以下参数以限制日志文件的大小：
+
+   ```
+   expire_logs_days = 7  # 日志文件保留7天
+   max_binlog_size = 100M  # 限制单个二进制日志文件的大小为100MB
+   
+   
+   ```
