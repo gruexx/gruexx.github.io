@@ -4,8 +4,8 @@ subtitle: 养猫记录
 date: 2023-08-03T12:07:55+08:00
 lastmod: 2023-11-08T19:07:38+08:00
 draft: false
-description: "新到的一只小奶牛"
-tags: [ "照片", "时间线", "猫" ]
+description: "捡到一只小猫"
+tags: [ "摄影", "时间线", "猫" ]
 categories: [ "日志" ]
 featuredImage: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/littleCowCat/main.jpg"
 featuredImagePreview: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/littleCowCat/main.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "关于我 PORRIZX"
+title: "关于我的博客"
 ---
 
 [//]: # ({{< music auto="https://music.163.com/#/song?id=2086529025" >}})
