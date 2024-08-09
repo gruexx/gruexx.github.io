@@ -1,9 +1,9 @@
 ---
-title: 妙妙工具箱
+title: 精选实用小工具
 subtitle: 精选实用小工具
 date: 2023-11-27T16:54:39+08:00
 draft: false
-description: "妙妙工具箱"
+description: "精选实用小工具"
 tags: [ "windows", "翻译", "截图" ]
 categories: [ "工具" ]
 ---

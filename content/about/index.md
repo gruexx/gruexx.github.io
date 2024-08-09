@@ -8,8 +8,6 @@ title: "关于我 PORRIZX"
 
 GitHub : https://github.com/porrizxx
 
-Gitee : https://gitee.com/zhou_zz
-
 ## 网站构成
 
 > hugo v0.117.0-b2f0696cad918fb61420a6aff173eb36662b406e+extended windows/amd64 BuildDate=2023-08-07T12:49:48Z
