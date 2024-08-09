@@ -318,7 +318,7 @@ DiscordInvite = ""
 Lichess = ""
 Pleroma = ""
 Kaggle = ""
-MediaWiki= ""
+MediaWiki = ""
 Plume = ""
 HackTheBox = ""
 RootMe = ""
@@ -949,10 +949,10 @@ identifier = "posts"
 pre = ""
 # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
 post = ""
-name = "文章"
+name = "笔记"
 url = "/posts/"
 # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-title = ""
+title = "aa"
 weight = 1
 [[menu.main]]
 identifier = "tags"
@@ -961,7 +961,7 @@ post = ""
 name = "标签"
 url = "/tags/"
 title = ""
-weight = 2
+weight = 3
 [[menu.main]]
 identifier = "categories"
 pre = ""
@@ -969,7 +969,7 @@ post = ""
 name = "分类"
 url = "/categories/"
 title = ""
-weight = 3
+weight = 4
 [[menu.main]]
 identifier = "about"
 pre = ""
@@ -978,3 +978,11 @@ name = "关于"
 url = "/about/"
 title = ""
 weight = 5
+[[menu.main]]
+identifier = "records"
+pre = ""
+post = ""
+name = "日志"
+url = "/records/"
+title = "日志"
+weight = 2

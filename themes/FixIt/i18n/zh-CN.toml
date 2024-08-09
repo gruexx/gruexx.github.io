@@ -44,7 +44,10 @@ other = "标签"
 other = "标签"
 
 [posts]
-other = "文章"
+other = "笔记"
+
+[records]
+other = "日志"
 # === Taxonomy ===
 
 # === Section ===
