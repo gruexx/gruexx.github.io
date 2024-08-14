@@ -2,6 +2,7 @@
 title: Linux 存储空间清理指南
 subtitle: 高效查找和清理大文件及无用文件，保持系统流畅运行
 date: 2024-04-15T16:54:01+08:00
+lastmod: 2024-08-14T15:41:01+08:00
 draft: false
 tags: [ "my2sql", "go", "mysql" ]
 categories: [ "笔记" ]
@@ -26,6 +27,9 @@ categories: [ "笔记" ]
 `du` 命令用于检查磁盘使用情况，可以通过以下命令找到大文件：
 
 ```shell
+# 查看当前目录所以文件或目录的大小
+du -sh * 
+
 # 查找当前目录及子目录中最大的 10 个文件或目录
 du -ah / | sort -rh | head -n 10
 ```
