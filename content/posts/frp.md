@@ -192,6 +192,8 @@ server {
 
 进入**nginx.exe**所在目录，执行`start nginx`来启动nginx
 
+`nginx -s stop` `nginx -s reload` 停止和重载nginx
+
 # 5 使用oss
 
 访问minio控制台 `https://域名:7003` 进行文件的管理
