@@ -7,41 +7,41 @@ draft: false
 description: "MGSD 巴巴托斯"
 tags: [ "模型拼装", "高达", "巴巴托斯" ]
 categories: [ "模型" ]
-featuredImage: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd11.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd10.jpg"
+featuredImage: "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd11.jpg"
+featuredImagePreview: "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd10.jpg"
 ---
 
 # 快递到货
 
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-01.jpg" caption="盒子照1" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-02.jpg" caption="盒子照2" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-03.jpg" caption="盒子照3" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-01.jpg" caption="盒子照1" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-02.jpg" caption="盒子照2" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd-bbts-03.jpg" caption="盒子照3" >}}
 
 # 拼装
 
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/04.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/05.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/04.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/05.jpg" >}}
 
 # 完成
 
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/06.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/07.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/08.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/06.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/07.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/08.jpg" >}}
 
 # 上后期
 
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd01.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd02.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd03.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd04.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd05.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd06.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd07.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd08.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd09.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd10.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd11.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd12.jpg" >}}
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd13.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd01.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd02.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd03.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd04.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd05.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd06.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd07.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd08.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd09.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd10.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd11.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd12.jpg" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd13.jpg" >}}
 
-{{< music url="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/bgm.mp3" name=オルフェンズの涙 artist=MISIA cover="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/mgsd-bbts/bgm.jpg" >}}
+{{< music url="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/bgm.mp3" name=オルフェンズの涙 artist=MISIA cover="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/bgm.jpg" >}}

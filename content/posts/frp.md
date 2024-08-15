@@ -6,8 +6,8 @@ draft: false
 description: "Frp+Minio 用闲置笔记本搭建自己的OSS"
 tags: [ "Frp", "Minio", "oss", "内网穿透", "Nginx" ]
 categories: [ "笔记", "教程" ]
-featuredImage: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
-featuredImagePreview: "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
+featuredImage: "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
+featuredImagePreview: "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/frp/frp-main.jpg"
 ---
 
 # 0 前言
@@ -93,7 +93,7 @@ local_ip = 127.0.0.1
 # 客户端跳转的端口
 local_port = 81
 # 域名
-custom_domains = blog.porrizx.cc
+custom_domains = blog.gruex.info
 ```
 
 控制台执行`frpc.exe -c frpc.ini`来启动服务端
@@ -128,10 +128,10 @@ nginx官网下载windows安装包 http://nginx.org/
 ```conf
 server {
    listen       81 ssl;
-   server_name  blog.porrizx.cc;
+   server_name  blog.gruex.info;
 
-   ssl_certificate      C:\Users\11198\Desktop\ssl\blog.porrizx.cc_bundle.pem;
-   ssl_certificate_key  C:\Users\11198\Desktop\ssl\blog.porrizx.cc.key;
+   ssl_certificate      C:\Users\11198\Desktop\ssl\blog.gruex.cc_bundle.pem;
+   ssl_certificate_key  C:\Users\11198\Desktop\ssl\blog.gruex.info.key;
 
    ssl_session_cache    shared:SSL:1m;
    ssl_session_timeout  5m;
@@ -221,14 +221,14 @@ local_ip = 127.0.0.1
 # 客户端跳转的端口
 local_port = 9000
 # 域名
-custom_domains = blog.porrizx.cc
+custom_domains = blog.gruex.info
 
 # 插件部分
 plugin = https2http
 plugin_local_addr = 127.0.0.1:9000
 
-plugin_crt_path = C:\Users\11198\Desktop\ssl\blog.porrizx.cc_bundle.pem
-plugin_key_path = C:\Users\11198\Desktop\ssl\blog.porrizx.cc.key
+plugin_crt_path = C:\Users\11198\Desktop\ssl\blog.gruex.cc_bundle.pem
+plugin_key_path = C:\Users\11198\Desktop\ssl\blog.gruex.info.key
 plugin_host_header_rewrite = 127.0.0.1
 plugin_header_X-From-Where = frp
 
@@ -238,13 +238,13 @@ plugin_header_X-From-Where = frp
 type = https
 local_ip = 127.0.0.1
 local_port = 9001
-custom_domains = minio.porrizx.cc
+custom_domains = minio.gruex.info
 
 plugin = https2http
 plugin_local_addr = 127.0.0.1:9001
 
-plugin_crt_path = C:\Users\11198\Desktop\ssl\minio\minio.porrizx.cc.pem
-plugin_key_path = C:\Users\11198\Desktop\ssl\minio\minio.porrizx.cc.key
+plugin_crt_path = C:\Users\11198\Desktop\ssl\minio\minio.gruex.info.pem
+plugin_key_path = C:\Users\11198\Desktop\ssl\minio\minio.gruex.info.key
 plugin_host_header_rewrite = 127.0.0.1
 plugin_header_X-From-Where = frp
 ```
@@ -255,7 +255,7 @@ plugin_header_X-From-Where = frp
 
 总之一直下一步，最后验证方式选择 **DNS(CANME)** 方式会比较简单
 
-{{< figure src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/frp/freessl.png" caption="选择验证方式" >}}
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/frp/freessl.png" caption="选择验证方式" >}}
 
 根据auth info创建DNS解析记录就可以了
 

@@ -14,7 +14,7 @@ categories: [ "笔记" ]
 
 Ubuntu下直接 `app-get install mosquitto` 安装
 
-配置用户名密码 `mosquitto_passwd -c /etc/mosquitto/pwfile.example porrizx`
+配置用户名密码 `mosquitto_passwd -c /etc/mosquitto/pwfile.example gruex`
 
 修改配置文件 `/etc/mosquitto/mosquitto.conf`
 

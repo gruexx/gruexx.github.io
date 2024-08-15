@@ -1,4 +1,4 @@
-baseURL = "https://porrizx.cc/"
+baseURL = "https://gruex.info/"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -12,7 +12,7 @@ theme = "FixIt"
 #  FixIt 主题版本
 version = "0.3.0"
 # 网站描述
-description = "porrizx的个人主页"
+description = "gruex的个人主页"
 # 网站关键词
 keywords = []
 # 网站默认主题样式 ("light", "dark", "auto")
@@ -44,15 +44,15 @@ disableThemeInject = false
 
 # 作者配置
 [params.author]
-name = "porrizx"
+name = "gruex"
 email = "1119864054@qq.com"
 link = "/about/"
-avatar = "https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/logo.png"
+avatar = "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/logo.png"
 
 #  公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
 [params.gitInfo]
 # 例如 "https://github.com/hugo-fixit/docs"
-repo = "https://github.com/porrizxx/porrizxx.github.io"
+repo = "https://github.com/gruexx/gruexx.github.io"
 branch = "main"
 # 相对于仓库根目录的内容目录路径
 dir = "content"
@@ -63,7 +63,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 #  应用图标配置
 [params.app]
 # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-title = "porrizx的个人主页"
+title = "gruex的个人主页"
 # 是否隐藏网站图标资源链接
 noFavicon = false
 # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -225,7 +225,7 @@ avatarURL = ""
 #  头像菜单链接的 identifier
 avatarMenu = ""
 #  主页显示的网站标题 (支持 HTML 格式)
-title = "porrizx的个人主页"
+title = "gruex的个人主页"
 # 主页显示的网站副标题
 subtitle = ""
 # 是否为副标题显示打字机动画
@@ -242,7 +242,7 @@ paginate = 5
 
 #  作者的社交信息设置
 [params.social]
-GitHub = "https://github.com/porrizxx"
+GitHub = "https://github.com/gruexx"
 Linkedin = ""
 Twitter = ""
 Instagram = ""
@@ -541,7 +541,7 @@ shortname = ""
 #  Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
 [params.page.comment.gitalk]
 enable = false
-owner = "porrizxx"
+owner = "gruexx"
 repo = "blog-comment"
 clientId = "66b49e2a3b34f9346e0a"
 clientSecret = "57d6774c3649a8f16b1c130b3d3dded7774b57b8"
@@ -611,7 +611,7 @@ enable = false
 [params.page.comment.utterances]
 enable = true
 # owner/repo
-repo = "porrizxx/blog-comment"
+repo = "gruexx/blog-comment"
 issueTerm = "pathname"
 label = ""
 lightTheme = "github-light"

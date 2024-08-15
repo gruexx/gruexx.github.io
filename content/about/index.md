@@ -1,12 +1,12 @@
 ---
-title: "PORRIZX'S BLOG"
+title: "GRUEX'S BLOG"
 ---
 
 [//]: # ({{< music auto="https://music.163.com/#/song?id=2086529025" >}})
 
-## 个人信息 <img src="https://blog.porrizx.cc:9004/data/blog-img/minio-blog-pic/logo.png" align='right' style="height:100px"/>
+## 个人信息 <img src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/logo.png" align='right' style="height:100px"/>
 
-GitHub : https://github.com/porrizxx
+GitHub : https://github.com/gruexx
 
 ## 网站构成
 
