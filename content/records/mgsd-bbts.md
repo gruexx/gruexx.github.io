@@ -28,7 +28,7 @@ featuredImagePreview: "https://blog.gruex.info:9004/data/blog-img/minio-blog-pic
 {{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/07.jpg" >}}
 {{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/08.jpg" >}}
 
-# 上后期
+# 照片后期处理
 
 {{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd01.jpg" >}}
 {{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/mgsd-bbts/mgsd02.jpg" >}}
