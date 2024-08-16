@@ -161,9 +161,9 @@ icp = ""
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
 #  是否显示 Hugo 和主题信息
 [params.footer.powered]
-enable = false
-hugoLogo = false
-themeLogo = false
+enable = true
+hugoLogo = true
+themeLogo = true
 #  网站创立时间
 [params.footer.siteTime]
 enable = true
