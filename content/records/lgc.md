@@ -1,7 +1,8 @@
 ---
-title: 冷嘎措露营摄影
-subtitle: 尝试捕捉日照金山的瞬间
+title: 川西旅行日志-冷嘎措
+subtitle: 24年五一假期出行的记录
 date: 2024-05-07T17:18:41+08:00
+lastmod: 2024-08-16T15:32:01+08:00
 draft: false
 description: "冷嘎措露营摄影记录"
 tags: [ "摄影" ]

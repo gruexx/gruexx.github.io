@@ -18,12 +18,16 @@ kubectl get pod -A
 
 ```
 
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/k8s/1.png" >}}
+
 ### 查看有问题的pod的描述
 
 ```
 kubectl describe pod snapshot-controller-0 -n kube-system
 
 ```
+
+{{< figure src="https://blog.gruex.info:9004/data/blog-img/minio-blog-pic/k8s/2.png" >}}
 
 ### 查看pod所在节点
 
