@@ -240,3 +240,15 @@ docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -
 docker stop gitlab && docker rm gitlab
 docker run -d -p 443:443 -p 1028:1028 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:16.5.1-ce.0
 ```
+
+自动下载太慢可以先手动拉取镜像
+
+``` 
+# 直接拉取
+docker pull gitlab/gitlab-ce:17.3.5-ce.0
+
+# dockerhub.icu加速
+docker pull dockerhub.icu/gitlab/gitlab-ce:17.3.5-ce.0
+docker image tag dockerhub.icu/gitlab/gitlab-ce:17.3.5-ce.0 gitlab/gitlab-ce:17.3.5-ce.0
+docker rmi dockerhub.icu/gitlab/gitlab-ce:17.3.5-ce.0
+```
